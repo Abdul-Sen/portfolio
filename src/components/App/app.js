@@ -7,13 +7,14 @@ import Home from '../Home/home';
 import Projects from '../Projects/projects'
 import Footer from '../Footer/footer';
 import Nav from '../Nav/nav';
+import { Box } from '@material-ui/core';
 class App extends React.Component {
 
   render() {
     return (
       <div>
         <Nav/>
-        <hr />
+        <Box height="40px"/>
         <Switch>
           <Route exact path='/' render={() => (
             <Home />
