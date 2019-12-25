@@ -15,7 +15,8 @@ class Home extends React.Component {
       <Fragment>
 
         <Grid spacing={2} container justify="space-around" >
-          <Grid item md={12} lg={12}>
+          <Grid item sm={12} md={12} lg={12}>
+          <div id="landingOverlay">
             <div id="landing">
               <Grid spacing={0} container justify="flex-start" direction="column">
                 <Grid item md={3}>
@@ -25,6 +26,7 @@ class Home extends React.Component {
                 <h4 >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, minus?</h4>
                 </Grid>
               </Grid>
+              </div>
             </div>
           </Grid>
           <Grid item md={4} sm={12} xs={12}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt optio maiores perspiciatis? Perferendis nam quos amet ratione voluptate ab, itaque dolor odio, eum nesciunt architecto atque incidunt voluptatibus dicta obcaecati repellat ducimus natus veniam quas laboriosam rerum vero in?</Grid>

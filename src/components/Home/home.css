@@ -1,36 +1,20 @@
-/* #home {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100%;
-}
 
-.flex_child {
-    flex: 1;
-    width: 40%;
-}
-
-p {
-    text-justify: inter-word;
-}
-
-img[src="landingImg"] {
-    width: 20px;
-    height: 20px;
-} */
-
-#landing {
+@media (min-width:960px){
+    #landing {
   
-    background-image: url(landing.png) ;
-    background-repeat: no-repeat;
-    background-color: rgba(0, 0, 0, .1);
-    background-color:  #ffffcc    ;
-    background-position: 80% 70%;
-    background-size: 300px;
-    padding: 200px;
+        background-image: url(landing.png) ;
+        background-repeat: no-repeat;
+        background-position: 80% 70%;
+        background-size: 300px;
+        padding: 200px;
+    }
 }
+
+#landingOverlay {
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+}
+
 #landing * {
     font-family: monospace;
+    
 }
