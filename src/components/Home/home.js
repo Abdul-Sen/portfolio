@@ -1,8 +1,10 @@
 import React, { Fragment } from 'react';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
-import { Grid, Paper } from '@material-ui/core';
-import landingPageImg from "./landing.png";
+import { Grid, Paper, Box, Container } from '@material-ui/core';
 import "./home.css";
+import codingImage from './Coding.png';
+import codingImage2 from './Coding2.png';
+import { flexbox } from '@material-ui/system';
 
 class Home extends React.Component {
 
@@ -14,66 +16,52 @@ class Home extends React.Component {
     return (
       <Fragment>
 
-        <Grid spacing={2} container justify="space-around" >
-          <Grid item sm={12} md={12} lg={12}>
-          <div id="landingOverlay">
-            <div id="landing">
-              <Grid spacing={0} container justify="flex-start" direction="column">
-                <Grid item md={3}>
-                  <h1>Welcome!</h1>
+        <Grid spacing={0} container wrap="wrap" justify="space-evenly" direction="row">
+          <Grid item sm={12} md={12} lg={12} xl={12}>
+            <div id="landingOverlay">
+              <div id="landing">
+                <Grid spacing={0} container justify="flex-start" direction="column">
+                  <Grid item md={3}>
+                    <h1>Welcome!</h1>
+                  </Grid>
+                  <Grid item md={6}>
+                    <h4 >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, minus?</h4>
+                  </Grid>
                 </Grid>
-                <Grid item md={6}>
-                <h4 >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, minus?</h4>
-                </Grid>
-              </Grid>
               </div>
             </div>
           </Grid>
-          <Grid item md={4} sm={12} xs={12}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea deserunt optio maiores perspiciatis? Perferendis nam quos amet ratione voluptate ab, itaque dolor odio, eum nesciunt architecto atque incidunt voluptatibus dicta obcaecati repellat ducimus natus veniam quas laboriosam rerum vero in?</Grid>
-          <Grid item md={4} sm={12} xs={12}> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus facilis, corrupti, recusandae dolore ab, aspernatur id sed quia beatae deleniti tempora ratione? Ipsam suscipit, nostrum doloribus aperiam enim neque recusandae sequi sed. Architecto, error veniam voluptatem neque iusto maiores, magni tempore magnam facere fuga nulla ipsam sequi culpa natus quidem, quaerat quis aut adipisci at.</Grid>
         </Grid>
+
+        <Container>
+          <Grid container spacing={2} direction="row" justify="space-around" >
+            <Grid item md={4} sm={12} xs={12} ><p>Lorem ipsum dolor, sit eaque aliquid, eius rerum blanditiis non dicta nesciunt. Ipsam labore nobis dolorem delectus dolore saepe, amet assumenda ducimus aliquam fugiat sit placeat voluptatibus aperiam veniam quasi nemo voluptas quae cum. Veniam, placeat possimus debitis fugit doloribus, in natus minus ullam, nobis illo quidem numquam facere facilis obcaecati rem aut asperiores quisquam quae voluptates reiciendis ratione error libero? Similique id sit ad optio voluptatum nostrum provident adipisci exercitationem repellat, assumenda quisquam saepe officia error nisi?</p></Grid>
+            <Grid className="img-container"item md={4} sm={12} xs={12} >
+              <img src={codingImage} width="300px" height="300px" alt="illustration#2" wrap="wrap"></img>
+            </Grid>
+            <Grid  className="img-container" item md={5} sm={12} xs={12}>
+              <img src={codingImage2} width="300px" height="300px" ></img>
+            </Grid>
+            <Grid item md={5} sm={12} xs={12}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto consequuntur laborum tenetur, eligendi amet voluptatem enim sapiente adipisci quidem ut similique ad autem consectetur a nulla iusto esse laboriosam nemo molestiae cum vero sequi illo quae! Quasi fuga in nesciunt tenetur vel voluptatibus sed ad nobis laudantium inventore voluptatum eaque, impedit laboriosam asperiores quidem ducimus corrupti quae hic voluptates tempora quis harum unde. Inventore ad incidunt illum at voluptatibus laudantium odit quo sunt veniam libero, quia impedit eum mollitia praesentium modi unde, provident doloremque blanditiis numquam doloribus culpa reiciendis neque vel? Error ullam asperiores hic consequatur consectetur sequi commodi.</p></Grid>
+           
+
+          </Grid>
+        </Container>
+
+        {/* <Grid item md={5} sm={12} xs={12} ><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae odio exercitationem libero iusto nihil amet earum facilis nostrum aliquam totam dignissimos sit excepturi laborum recusandae quia, eaque aliquid, eius rerum blanditiis non dicta nesciunt. Ipsam labore nobis dolorem delectus dolore saepe, amet assumenda ducimus aliquam fugiat sit placeat voluptatibus aperiam veniam quasi nemo voluptas quae cum. Veniam, placeat possimus debitis fugit doloribus, in natus minus ullam, nobis illo quidem numquam facere facilis obcaecati rem aut asperiores quisquam quae voluptates reiciendis ratione error libero? Similique id sit ad optio voluptatum nostrum provident adipisci exercitationem repellat, assumenda quisquam saepe officia error nisi?</p></Grid>
+          <Grid item md={5} sm={12} xs={12} >
+            <img src={codingImage} width="300px" height="300px" alt="illustration#2"></img>
+          </Grid>
+            <Grid item md={5} sm={12} xs={12}>
+              <img src={codingImage2} width="300px" height="300px" ></img>
+            </Grid>
+            <Grid item md={5} sm={12} xs={12}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa architecto consequuntur laborum tenetur, eligendi amet voluptatem enim sapiente adipisci quidem ut similique ad autem consectetur a nulla iusto esse laboriosam nemo molestiae cum vero sequi illo quae! Quasi fuga in nesciunt tenetur vel voluptatibus sed ad nobis laudantium inventore voluptatum eaque, impedit laboriosam asperiores quidem ducimus corrupti quae hic voluptates tempora quis harum unde. Inventore ad incidunt illum at voluptatibus laudantium odit quo sunt veniam libero, quia impedit eum mollitia praesentium modi unde, provident doloremque blanditiis numquam doloribus culpa reiciendis neque vel? Error ullam asperiores hic consequatur consectetur sequi commodi.</p></Grid>
+           */}
+
+
       </Fragment>
     )
   }
 }
 
 export default Home;
-
-// import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// // import "./home.css";
-// // import landingImg from "./undraw_Hello_qnas.svg";
-
-// const styles = {
-//   h1: {
-//     color: "red"
-//   }
-// };
-
-// const useStyles = makeStyles(styles);
-
-// export default class Home extends React.Component {
-//   constructor(props){
-//     super(props);
-//   }
-
-//   render() {
-//     const cssClasses = useStyles();
-//     return(<h1 >home</h1>)
-//     // return (<section id="home">
-//     //   {/* <img src={landingImg} alt="landing page image"/> */}
-
-//     //   <div className="flex_child">
-//     //   <p>
-//     //     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-//     //       </p>
-//     //   </div>
-//     //   <div className="flex_child">
-//     //   <p>
-//     //     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-//     //       </p>
-//     //   </div>
-
-//     // </section>)
-//   }
-// }

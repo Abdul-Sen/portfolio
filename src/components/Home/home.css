@@ -16,5 +16,16 @@
 
 #landing * {
     font-family: monospace;
-    
+}
+
+p {
+    text-align: justify;
+}
+img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.img-container {
+    text-align: center;
+    /* background-color: red; */
 }
