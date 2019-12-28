@@ -7,7 +7,7 @@ import Home from '../Home/home';
 import Projects from '../Projects/projects'
 import Footer from '../Footer/footer';
 import Nav from '../Nav/nav';
-import { Box } from '@material-ui/core';
+import { Box, Container } from '@material-ui/core';
 class App extends React.Component {
 
   render() {
@@ -37,10 +37,8 @@ class App extends React.Component {
             <h1>Not Found</h1>
           )} />
         </Switch>
-        <hr/>
         <Footer />
-
-      </div>
+        </div>
     );
   }
 

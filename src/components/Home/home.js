@@ -33,7 +33,7 @@ class Home extends React.Component {
           </Grid>
         </Grid>
 
-        <Container>
+        <Container maxWidth="lg">
           <Grid container spacing={2} direction="row" justify="space-around" >
             <Grid item md={4} sm={12} xs={12} ><p>Lorem ipsum dolor, sit eaque aliquid, eius rerum blanditiis non dicta nesciunt. Ipsam labore nobis dolorem delectus dolore saepe, amet assumenda ducimus aliquam fugiat sit placeat voluptatibus aperiam veniam quasi nemo voluptas quae cum. Veniam, placeat possimus debitis fugit doloribus, in natus minus ullam, nobis illo quidem numquam facere facilis obcaecati rem aut asperiores quisquam quae voluptates reiciendis ratione error libero? Similique id sit ad optio voluptatum nostrum provident adipisci exercitationem repellat, assumenda quisquam saepe officia error nisi?</p></Grid>
             <Grid className="img-container"item md={4} sm={12} xs={12} >
