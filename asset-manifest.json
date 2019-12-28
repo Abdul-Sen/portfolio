@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Abdul-Sen/dummy-profolio-website/static/css/main.c1298d57.chunk.css",
-    "main.js": "/Abdul-Sen/dummy-profolio-website/static/js/main.b4abc1c0.chunk.js",
-    "main.js.map": "/Abdul-Sen/dummy-profolio-website/static/js/main.b4abc1c0.chunk.js.map",
+    "main.js": "/Abdul-Sen/dummy-profolio-website/static/js/main.d42f9b2d.chunk.js",
+    "main.js.map": "/Abdul-Sen/dummy-profolio-website/static/js/main.d42f9b2d.chunk.js.map",
     "runtime-main.js": "/Abdul-Sen/dummy-profolio-website/static/js/runtime-main.3eb70e89.js",
     "runtime-main.js.map": "/Abdul-Sen/dummy-profolio-website/static/js/runtime-main.3eb70e89.js.map",
     "static/js/2.eb5a1a17.chunk.js": "/Abdul-Sen/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js",
     "static/js/2.eb5a1a17.chunk.js.map": "/Abdul-Sen/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js.map",
     "index.html": "/Abdul-Sen/dummy-profolio-website/index.html",
-    "precache-manifest.d7c80bfbef9224e21ebf59657fca69f3.js": "/Abdul-Sen/dummy-profolio-website/precache-manifest.d7c80bfbef9224e21ebf59657fca69f3.js",
+    "precache-manifest.7e27f19aa69855c5c980603ff97c3a3e.js": "/Abdul-Sen/dummy-profolio-website/precache-manifest.7e27f19aa69855c5c980603ff97c3a3e.js",
     "service-worker.js": "/Abdul-Sen/dummy-profolio-website/service-worker.js",
     "static/css/main.c1298d57.chunk.css.map": "/Abdul-Sen/dummy-profolio-website/static/css/main.c1298d57.chunk.css.map",
     "static/js/2.eb5a1a17.chunk.js.LICENSE": "/Abdul-Sen/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js.LICENSE",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.3eb70e89.js",
     "static/js/2.eb5a1a17.chunk.js",
     "static/css/main.c1298d57.chunk.css",
-    "static/js/main.b4abc1c0.chunk.js"
+    "static/js/main.d42f9b2d.chunk.js"
   ]
 }
