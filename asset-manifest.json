@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Abdul-Sen/dummy-profolio-website/static/css/main.c1298d57.chunk.css",
-    "main.js": "/Abdul-Sen/dummy-profolio-website/static/js/main.d42f9b2d.chunk.js",
-    "main.js.map": "/Abdul-Sen/dummy-profolio-website/static/js/main.d42f9b2d.chunk.js.map",
-    "runtime-main.js": "/Abdul-Sen/dummy-profolio-website/static/js/runtime-main.3eb70e89.js",
-    "runtime-main.js.map": "/Abdul-Sen/dummy-profolio-website/static/js/runtime-main.3eb70e89.js.map",
-    "static/js/2.eb5a1a17.chunk.js": "/Abdul-Sen/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js",
-    "static/js/2.eb5a1a17.chunk.js.map": "/Abdul-Sen/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js.map",
-    "index.html": "/Abdul-Sen/dummy-profolio-website/index.html",
-    "precache-manifest.7e27f19aa69855c5c980603ff97c3a3e.js": "/Abdul-Sen/dummy-profolio-website/precache-manifest.7e27f19aa69855c5c980603ff97c3a3e.js",
-    "service-worker.js": "/Abdul-Sen/dummy-profolio-website/service-worker.js",
-    "static/css/main.c1298d57.chunk.css.map": "/Abdul-Sen/dummy-profolio-website/static/css/main.c1298d57.chunk.css.map",
-    "static/js/2.eb5a1a17.chunk.js.LICENSE": "/Abdul-Sen/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js.LICENSE",
-    "static/media/Coding.png": "/Abdul-Sen/dummy-profolio-website/static/media/Coding.4ef40d95.png",
-    "static/media/Coding2.png": "/Abdul-Sen/dummy-profolio-website/static/media/Coding2.89b1fd79.png",
-    "static/media/home.css": "/Abdul-Sen/dummy-profolio-website/static/media/landing.5fe75839.png"
+    "main.css": "/dummy-profolio-website/static/css/main.37b92ed5.chunk.css",
+    "main.js": "/dummy-profolio-website/static/js/main.d42f9b2d.chunk.js",
+    "main.js.map": "/dummy-profolio-website/static/js/main.d42f9b2d.chunk.js.map",
+    "runtime-main.js": "/dummy-profolio-website/static/js/runtime-main.ac74ea85.js",
+    "runtime-main.js.map": "/dummy-profolio-website/static/js/runtime-main.ac74ea85.js.map",
+    "static/js/2.eb5a1a17.chunk.js": "/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js",
+    "static/js/2.eb5a1a17.chunk.js.map": "/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js.map",
+    "index.html": "/dummy-profolio-website/index.html",
+    "precache-manifest.b48df6e464507c131863c47359dc5b51.js": "/dummy-profolio-website/precache-manifest.b48df6e464507c131863c47359dc5b51.js",
+    "service-worker.js": "/dummy-profolio-website/service-worker.js",
+    "static/css/main.37b92ed5.chunk.css.map": "/dummy-profolio-website/static/css/main.37b92ed5.chunk.css.map",
+    "static/js/2.eb5a1a17.chunk.js.LICENSE": "/dummy-profolio-website/static/js/2.eb5a1a17.chunk.js.LICENSE",
+    "static/media/Coding.png": "/dummy-profolio-website/static/media/Coding.4ef40d95.png",
+    "static/media/Coding2.png": "/dummy-profolio-website/static/media/Coding2.89b1fd79.png",
+    "static/media/home.css": "/dummy-profolio-website/static/media/landing.5fe75839.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.3eb70e89.js",
+    "static/js/runtime-main.ac74ea85.js",
     "static/js/2.eb5a1a17.chunk.js",
-    "static/css/main.c1298d57.chunk.css",
+    "static/css/main.37b92ed5.chunk.css",
     "static/js/main.d42f9b2d.chunk.js"
   ]
 }
