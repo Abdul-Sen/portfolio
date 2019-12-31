@@ -26,7 +26,7 @@ export default function NavBarSelf(props) {
             <Box width="2em" />
             <Link to={ROUTES.PROJECTS}>
                 <Button>
-                    Projects
+                    Work/Projects
                     </Button>
             </Link>
             <Box width="2em" />
