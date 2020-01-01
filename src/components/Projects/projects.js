@@ -1,18 +1,11 @@
 import React, { Fragment } from 'react';
 import { Container, Grid, ListItem } from '@material-ui/core';
 import ProjectInfo from './itemData.json';
-function RenderItem(props) {
-  return (
-    <ListItem>
-      
-      <img src={props.project.tileTile.gif} alt="project gif"  width="250"/>
-    </ListItem>
-  );
-}
+import RenderItem from './RenderItem/renderItem';
 
 function Projects(props) {
-  console.log(ProjectInfo.project[0])
-
+  let projectsArray = ProjectInfo.project;
+  
   return (
     <Fragment>
       <Container>
@@ -28,7 +21,18 @@ function Projects(props) {
             <h1>Projects</h1>
           </Grid>
           <Grid item md={12}>
-            <RenderItem project={ProjectInfo.project[0]}></RenderItem>
+          {projectsArray.map((currentValue, currentIndex) => {  
+            console.log("Entered");
+            console.log(currentValue);
+           // Return the element. Also pass key     
+           return (<RenderItem key={currentIndex} project={currentValue}/>) 
+        })}
+
+            {/* <RenderItem project={ProjectInfo.project[0]}></RenderItem>
+            {projectsArray.map((currentValue,currentIndex)=>({
+              return(<RenderItem key={i} answer={answer} /> )
+            }))} */}
+
           </Grid>
         </Grid>
 
