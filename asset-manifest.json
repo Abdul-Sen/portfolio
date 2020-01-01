@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/dummy-profolio-website/static/css/main.37b92ed5.chunk.css",
-    "main.js": "/dummy-profolio-website/static/js/main.e5ee7ef9.chunk.js",
-    "main.js.map": "/dummy-profolio-website/static/js/main.e5ee7ef9.chunk.js.map",
+    "main.js": "/dummy-profolio-website/static/js/main.f3bbf531.chunk.js",
+    "main.js.map": "/dummy-profolio-website/static/js/main.f3bbf531.chunk.js.map",
     "runtime-main.js": "/dummy-profolio-website/static/js/runtime-main.ac74ea85.js",
     "runtime-main.js.map": "/dummy-profolio-website/static/js/runtime-main.ac74ea85.js.map",
     "static/js/2.5de84c98.chunk.js": "/dummy-profolio-website/static/js/2.5de84c98.chunk.js",
     "static/js/2.5de84c98.chunk.js.map": "/dummy-profolio-website/static/js/2.5de84c98.chunk.js.map",
     "index.html": "/dummy-profolio-website/index.html",
-    "precache-manifest.21a12cc38b0d4ce4ce3b4382efc0ca92.js": "/dummy-profolio-website/precache-manifest.21a12cc38b0d4ce4ce3b4382efc0ca92.js",
+    "precache-manifest.33299139a0bfff76ddb144c12a47a54e.js": "/dummy-profolio-website/precache-manifest.33299139a0bfff76ddb144c12a47a54e.js",
     "service-worker.js": "/dummy-profolio-website/service-worker.js",
     "static/css/main.37b92ed5.chunk.css.map": "/dummy-profolio-website/static/css/main.37b92ed5.chunk.css.map",
     "static/js/2.5de84c98.chunk.js.LICENSE": "/dummy-profolio-website/static/js/2.5de84c98.chunk.js.LICENSE",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.ac74ea85.js",
     "static/js/2.5de84c98.chunk.js",
     "static/css/main.37b92ed5.chunk.css",
-    "static/js/main.e5ee7ef9.chunk.js"
+    "static/js/main.f3bbf531.chunk.js"
   ]
 }
