@@ -12,14 +12,20 @@ const cssStyles = makeStyles(theme => ({
         "&:hover": {
             boxShadow: "1px 8px 17px grey",
             transform: "scale(0.93) translate(10px, -10px)",
-            WebkitTransition: "all .7s ease"
-          }
+            transition: "all .7s ease"
+          },
+          "&:hover img": {
+            boxShadow: "1px 8px 17px grey",
+            transform: "translate(0, -6px)",
+            transition: "all 0.3s ease-out"
+          },
+        "& img": {
+            borderRadius: "10px"
+        }
     },
-    boxContainer: {
-        backgroundColor: "red",
-        flexDirection: "row",
-        display: "flexbox",
-    },
+    flexItem: {
+        marginLeft: "auto"
+        },
     content: {
         padding: "10px",
     },
@@ -48,7 +54,7 @@ function RenderItem(props) {
                             <Grid item className={useStyle.description}>
                                 <p>{props.project.tileTile.description}</p>
                             </Grid>
-                            <Grid item className={useStyle.content} md={9}>
+                            <Grid item className={useStyle.content} md={12}>
                             <Grid container direction="row">
                                 <Grid item>
                                     <Button>Source Code</Button>
@@ -60,6 +66,9 @@ function RenderItem(props) {
                                     <Button>
                                         <FavoriteBorderIcon></FavoriteBorderIcon>
                                     </Button>
+                                </Grid>
+                                <Grid item className={useStyle.flexItem}>
+                                    <Button>View Project</Button>
                                 </Grid>
                                 </Grid>
                             </Grid>
