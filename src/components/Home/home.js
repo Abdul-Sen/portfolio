@@ -1,10 +1,8 @@
 import React, { Fragment } from 'react';
-import { makeStyles, withStyles } from '@material-ui/core/styles';
-import { Grid, Paper, Box, Container } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 import "./home.css";
 import codingImage from './Coding.png';
 import codingImage2 from './Coding2.png';
-import { flexbox } from '@material-ui/system';
 
 class Home extends React.Component {
 

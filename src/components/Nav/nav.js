@@ -13,6 +13,7 @@ const useCSSStyles = makeStyles(theme => ({
 
 export default function Nav() {
     const styleCSSClasses = useCSSStyles();
+    
     const matches = useMediaQuery('(min-width:600px)');
 
     return (
@@ -26,22 +27,3 @@ export default function Nav() {
 
     );
 }
-
-/**
- *
-          <ul>
-            <li>
-                <Link to={ROUTES.HOME}>Home</Link>
-            </li>
-            <li>
-                <Link to={ROUTES.ABOUT}>About</Link>
-            </li>
-            <li>
-                <Link to={ROUTES.CONTACT}>Contact</Link>
-            </li>
-            <li>
-                <Link to={ROUTES.PROJECTS}>Projects</Link>
-            </li>
-        </ul>
-
- */

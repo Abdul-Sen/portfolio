@@ -21,9 +21,7 @@ function Projects(props) {
             <h1>Projects</h1>
           </Grid>
           <Grid item md={12}>
-          {projectsArray.map((currentValue, currentIndex) => {  
-            console.log("Entered");
-            console.log(currentValue);
+          {projectsArray.map((currentValue, currentIndex) => {
            // Return the element. Also pass key     
            return (<RenderItem key={currentIndex} project={currentValue}/>) 
         })}
