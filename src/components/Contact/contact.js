@@ -23,17 +23,32 @@ const styleHook = makeStyles(theme => ({
 function Contact(props) {
   const useStyle = styleHook();
 
-  const [emailInfo, setEmailInfo] = useState({ name: "", email: "test", subject: "", message: "", copyEmailStatus: false });
+  const [emailInfo, setEmailInfo] = useState({ name: "", email: "", subject: "", message: "", copyEmailStatus: false });
 
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
     alert(`email sent to Abdul Rehman from ${emailInfo.name}, check console for logs`);
     console.log(emailInfo);
-  }
+
+    (async () => {
+      const rawResponse = await fetch('https://us-central1-microservices-264117.cloudfunctions.net/sendMessage', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(emailInfo)
+      });
+
+      console.log(rawResponse);//! important
+
+    })(); //Execute immidiately
+    
+    }
+
 
   // # handeling state changes
-
   // ! for document purposes. We can choose to create individual functions to handle changes
   // const handleEmailChange = (val)=>{
   //   setEmailInfo((previousState) => ({ ...previousState, email: val }));
@@ -93,8 +108,8 @@ function Contact(props) {
                     </Grid>
                     <Grid item xs={12}>
                       <FormControlLabel
-                        control={<Checkbox color="primary" name="copyEmailStatus" checked={emailInfo.copyEmailStatus} onChange={handleChange} value="yes" />}
-                        label="Send me a copy of the email"
+                        control={<Checkbox color="primary" name="copyEmailStatus" checked={emailInfo.copyEmailStatus} disabled onChange={handleChange} value="yes" />}
+                        label="Send me a copy of the email (Temp disabled)"
                       />
                     </Grid>
                     <Grid item className={useStyle.fab} md={3}>
