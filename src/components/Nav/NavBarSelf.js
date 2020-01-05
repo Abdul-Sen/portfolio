@@ -30,12 +30,6 @@ export default function NavBarSelf(props) {
                     </Button>
             </Link>
             <Box width="2em" />
-            <Link to={ROUTES.ABOUT}>
-                <Button>
-                    About
-                </Button>
-            </Link>
-            <Box width="2em" />
             <Link to={ROUTES.CONTACT}>
                 <Button>
                     Contact
