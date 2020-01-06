@@ -19,9 +19,9 @@ class App extends React.Component {
           <Route exact path='/' render={() => (
             <Home />
           )} />
-         <Route exact path='/home' render={() => (
+         {/* <Route exact path='/home' render={() => (
             <Home />
-          )} />
+          )} /> */}
 
           <Route exact path='/Projects' render={() => (
             <Projects />
