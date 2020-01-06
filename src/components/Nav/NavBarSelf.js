@@ -1,7 +1,8 @@
 import * as ROUTES from '../../routes/routes';
 import { Link } from 'react-router-dom';
 import React, { Fragment } from 'react';
-import { AppBar, Typography, Button, Box, IconButton, SvgIcon, useMediaQuery } from '@material-ui/core';
+import {Button, Box, IconButton, SvgIcon } from '@material-ui/core';
+
 
 function HomeButton() {
     return (<IconButton aria-label="delete">

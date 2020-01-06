@@ -9,6 +9,9 @@ import NavBarSelf from "./NavBarSelf";
 const useStyles = makeStyles({
   list: {
     width: 240
+  },
+  menuIcon: {
+    padding:"10px"
   }
 });
 
@@ -45,7 +48,7 @@ export default function NavDrawer() {
   return (
     <div>
       <Button onClick={toggleDrawer("left", true)}>
-      <MenuIcon></MenuIcon>
+      <MenuIcon className={classes.menuIcon}></MenuIcon>
       </Button>
       <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
         {sideList("left")}
