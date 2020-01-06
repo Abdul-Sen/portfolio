@@ -8,6 +8,8 @@ class Home extends React.Component {
 
   constructor(props) {
     super(props);
+    console.log("updated");
+    console.log(process.env.PUBLIC_URL);
   }
 
   render() {
