@@ -13,10 +13,10 @@ function HomeButton() {
 export default function NavBarSelf(props) {
     return (
         <Fragment>
-            <Link to={ process.env.PUBLIC_URL + ROUTES.HOME}>
+            <Link to={ ROUTES.HOME}>
 
                 {props.display === "desktop" ? <HomeButton></HomeButton> : 
-                <Link to={process.env.PUBLIC_URL + ROUTES.HOME}>
+                <Link to={ROUTES.HOME}>
                     <Button>
                         Home
                     </Button>
@@ -24,13 +24,13 @@ export default function NavBarSelf(props) {
 
             </Link>
             <Box width="2em" />
-            <Link to={process.env.PUBLIC_URL + ROUTES.PROJECTS}>
+            <Link to={ ROUTES.PROJECTS}>
                 <Button>
                     Work/Projects
                     </Button>
             </Link>
             <Box width="2em" />
-            <Link to={process.env.PUBLIC_URL + ROUTES.CONTACT}>
+            <Link to={ ROUTES.CONTACT}>
                 <Button>
                     Contact
                 </Button>
