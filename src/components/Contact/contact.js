@@ -30,7 +30,8 @@ function Contact(props) {
 
   const handleSubmit = (evt) => {
     evt.preventDefault();
-    alert(`email sent to Abdul Rehman from ${emailInfo.name}, check console for logs`);
+
+    alert(`An email has been sent to Abdul Rehman`);
     console.log(emailInfo);
 
     (async () => {
@@ -58,7 +59,6 @@ function Contact(props) {
 
 
   const handleChange = e => {
-    console.log(e.target);
 
     //? This 'if' only exists because i was too dumb to figure out best way to support the checkbox =/
     const temp = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
