@@ -19,6 +19,16 @@
                 "description": "Term project for WEB322- Server-side w/ NodeJS. This app is hosted on Heroku free tier so it will take a few seconds to boot up.",
                 "tags": ["nodeJs","bootstrap 4.0","handlebars","mongoDB", "PostgreSQL"]
             }
+        },
+        {
+            "tileTile":{
+                "gif": "/images/web322.gif",
+                "projectLink": "https://github.com/Abdul-Sen/dummy-profolio-website",
+                "demoLink": "https://abdul-sen.github.io/dummy-profolio-website/",
+                "title": "This site!",
+                "description": "So why am I not using any one of the many readily available static profolio templates? To practice react ofcourse! This project allowed me to work with the new Hooks API for react.",
+                "tags": ["react","material UI","Google Cloud Functions","Github Pages"]
+            }
         }
     ]
 }

@@ -27,7 +27,7 @@ function Projects(props) {
             <h3>Systems Developer (co-op) - Healthcare of Ontario Pension Plan</h3>
           </Grid>
           <Grid item md={12}>
-            <h1>Cool things that I've made recently...</h1>
+            <h1>Cool things that I've built recently...</h1>
           </Grid>
           <Grid item md={10}>
           {projectsArray.map((currentValue, currentIndex) => {
