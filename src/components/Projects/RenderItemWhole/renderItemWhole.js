@@ -61,29 +61,19 @@ function RenderItemWhole(props) {
                         <h4>{props.project.tileTile.title}</h4>
                         <p>{props.project.tileTile.description}</p>
                         <Grid container >
-
                             <Grid item className={useStyle.content} md={12}>
                                 <Grid container direction="row">
                                     <Grid item md={6}>
-                                        <Button variant="outlined">GitHub</Button>
+                                        <Button variant="outlined" target="_blank" href={props.project.tileTile.projectLink}>GitHub</Button>
                                     </Grid>
                                     <Grid md={6} item className={useStyle.flexItem}>
-                                        <Fab variant="extended" size="medium" color="primary">
+                                        <Fab href={props.project.tileTile.demoLink} target="_blank" variant="extended" size="medium" color="primary">
                                             Demo
                                         <ArrowForwardIosIcon fontSize="small" />
                                         </Fab>
                                     </Grid>
                                 </Grid>
                             </Grid>
-                            {/* <Grid item md={12}>
-                                <ButtonGroup className={useStyle.buttonGroup} size="small" aria-label="small outlined button group">
-                                    {
-                                        props.project.tileTile.tags.map((currentValue, currentIndex) => {
-                                            return (<Button className={useStyle.tagButton} key={currentIndex}>{currentValue}</Button>)
-                                        })
-                                    }
-                                </ButtonGroup>
-                            </Grid> */}
                         </Grid>
                     </Grid>
                     <Grid item md={8} sm={12} xs={12}>

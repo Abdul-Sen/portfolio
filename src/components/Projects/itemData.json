@@ -2,24 +2,22 @@
     "project": [
         {
             "tileTile":{
-                "gif": "/images/web322.gif",
-                "title": "Test title",
-                "description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue",
+                "gif": "/images/recipeApp.gif",
+                "title": "Recipe Web App",
+                "projectLink": "https://github.com/Abdul-Sen/Recipe-application",
+                "demoLink": "https://vast-ravine-81065.herokuapp.com/",
+                "description": "Hungry and don't know what to cook? Fear not! This app will help you find random recipes and through the power of CRUD, you can add your personal touch to the recipes. This app was build to help me understand good vs bad RESTful API desgin, and to work with cool APIs in the process.",
                 "tags": ["nodeJs","bootstrap 4.0","handlebars","mongoDB", "PostgreSQL"]
-            },
-            "modalTile": {
-                "description": "; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
             }
         },
         {
             "tileTile":{
-                "gif": "/images/recipeApp.gif",
-                "title": "Test title",
-                "description": "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue",
+                "gif": "/images/web322.gif",
+                "projectLink": "https://github.com/Abdul-Sen/Employee-Management-System",
+                "demoLink": "https://mysterious-fjord-83697.herokuapp.com/",
+                "title": "Employee Management CRUD app",
+                "description": "Term project for WEB322- Server-side w/ NodeJS. This app is hosted on Heroku free tier so it will take a few seconds to boot up.",
                 "tags": ["nodeJs","bootstrap 4.0","handlebars","mongoDB", "PostgreSQL"]
-            },
-            "modalTile": {
-                "description": "; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains."
             }
         }
     ]
