@@ -62,11 +62,11 @@ function RenderItemWhole(props) {
                         <p>{props.project.tileTile.description}</p>
                         <Grid container >
                             <Grid item className={useStyle.content} md={12}>
-                                <Grid container direction="row">
+                                <Grid container direction="row" spacing={3}>
                                     <Grid item md={6}>
-                                        <Button variant="outlined" target="_blank" href={props.project.tileTile.projectLink}>GitHub</Button>
+                                        <Button  variant="outlined" target="_blank" href={props.project.tileTile.projectLink}>GitHub</Button>
                                     </Grid>
-                                    <Grid md={6} item className={useStyle.flexItem}>
+                                    <Grid item md={6}>
                                         <Fab href={props.project.tileTile.demoLink} target="_blank" variant="extended" size="medium" color="primary">
                                             Demo
                                         <ArrowForwardIosIcon fontSize="small" />
@@ -83,16 +83,15 @@ function RenderItemWhole(props) {
                                 </CardMedia>
                             </CardActionArea>
                         </Card>
-                        {/* <div className={useStyle.paper}>
-                    <img className={useStyle.paperContent} src={process.env.PUBLIC_URL + props.project.tileTile.gif} ></img>
-                    </div> */}
                     </Grid>
-                    <Grid item md={12}>
-                        <span>tech tags: </span>
+                    <Grid item md={12}>  
                         <ButtonGroup className={useStyle.buttonGroup} size="small" aria-label="small outlined button group">
                             {
                                 props.project.tileTile.tags.map((currentValue, currentIndex) => {
-                                    return (<Button className={useStyle.tagButton} key={currentIndex}>{currentValue}</Button>)
+                                    return (<div>
+                                        {(currentIndex === 0)? <span>Tech tags: </span> : null }
+                                        <Button className={useStyle.tagButton} key={currentIndex}>{currentValue}</Button>
+                                        </div>)
                                 })
                             }
                         </ButtonGroup>
