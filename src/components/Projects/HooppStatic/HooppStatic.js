@@ -66,7 +66,7 @@ export default function CustomizedExpansionPanels() {
         <ExpansionPanelDetails>
           <Typography>
             Worked alongside other teammates to analyze various microservices architectural options. Build a minimum viable product
-            using Azure Automation Runbooks and Azure Cloud Function App to meet the companys' hybrid infrastructure requirements. Setup production 
+            using Azure Automation Runbooks and Azure Cloud Function App to meet the company's hybrid infrastructure requirements. Setup production 
             pipeline from Azure DevOps to automate build and release pipeline for our production setup, including setting up automated Postman API testing.
           </Typography>
         </ExpansionPanelDetails>
@@ -78,7 +78,7 @@ export default function CustomizedExpansionPanels() {
         <ExpansionPanelDetails>
           <Typography>
             Built an automation script using C# and Selenium to track uptime of a company site. Script
-            checks for performace degration and sends alert via SMTP to team members. Logs each instance
+            checks for performance degradation and sends alert via SMTP to team members. Logs each instance
             to help track potential problems using log4net
           </Typography>
         </ExpansionPanelDetails>
@@ -90,7 +90,7 @@ export default function CustomizedExpansionPanels() {
         <ExpansionPanelDetails>
           <Typography>
             Used <a target="_blank" href="https://github.com/microsoft/Intune-PowerShell-SDK" >Intune PowerShell SDK</a> to work with Intune's Graph API to automate client communications about security alerts.
-            Script filters clients based on provided OS version criteria and automatically alerts users about potential security vunerabilities
+            Script filters clients based on provided OS version criteria and automatically alerts users about potential security vulnerabilities
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
