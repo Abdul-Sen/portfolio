@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react';
-import { ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGroup } from '@material-ui/core';
+import React, { Fragment, useState } from 'react';
+import { ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGroup} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ImageDialog from './ImageDialogue';
 
 
 const cssStyles = makeStyles(theme => ({
@@ -52,8 +53,14 @@ const cssStyles = makeStyles(theme => ({
 
 function RenderItemWhole(props) {
     const useStyle = cssStyles();
+    const [showDialog,setShowDialog] = useState(false);
+
+    const handleCardClick = (event) =>{
+        setShowDialog(showDialog => !showDialog);
+    }
 
     return (<Fragment>
+        {/* { showDialog && <ImageDialog img={process.env.PUBLIC_URL + props.project.tileTile.gif}></ImageDialog>} */}
         <ListItem className={useStyle.listItem}>
             <div className={useStyle.root}>
                 <Grid container spacing={10} direction="row">
@@ -78,7 +85,7 @@ function RenderItemWhole(props) {
                     </Grid>
                     <Grid item md={8} sm={12} xs={12}>
                         <Card className={useStyle.paper}>
-                            <CardActionArea>
+                            <CardActionArea onClick={handleCardClick}>
                                 <CardMedia component="img" alt="card image failed to load" height="100%" image={process.env.PUBLIC_URL + props.project.tileTile.gif}>
                                 </CardMedia>
                             </CardActionArea>
@@ -99,6 +106,7 @@ function RenderItemWhole(props) {
                 </Grid>
             </div>
         </ListItem>
+        <hr></hr>
     </Fragment>);
 }
 
