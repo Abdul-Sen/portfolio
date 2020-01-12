@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/dummy-profolio-website/static/css/main.37b92ed5.chunk.css",
-    "main.js": "/dummy-profolio-website/static/js/main.fa9275e8.chunk.js",
-    "main.js.map": "/dummy-profolio-website/static/js/main.fa9275e8.chunk.js.map",
+    "main.js": "/dummy-profolio-website/static/js/main.0d569e0b.chunk.js",
+    "main.js.map": "/dummy-profolio-website/static/js/main.0d569e0b.chunk.js.map",
     "runtime-main.js": "/dummy-profolio-website/static/js/runtime-main.ac74ea85.js",
     "runtime-main.js.map": "/dummy-profolio-website/static/js/runtime-main.ac74ea85.js.map",
-    "static/js/2.ea699a70.chunk.js": "/dummy-profolio-website/static/js/2.ea699a70.chunk.js",
-    "static/js/2.ea699a70.chunk.js.map": "/dummy-profolio-website/static/js/2.ea699a70.chunk.js.map",
+    "static/js/2.8ab65d40.chunk.js": "/dummy-profolio-website/static/js/2.8ab65d40.chunk.js",
+    "static/js/2.8ab65d40.chunk.js.map": "/dummy-profolio-website/static/js/2.8ab65d40.chunk.js.map",
     "index.html": "/dummy-profolio-website/index.html",
-    "precache-manifest.8ff62a872eb53eea45863cb516617da4.js": "/dummy-profolio-website/precache-manifest.8ff62a872eb53eea45863cb516617da4.js",
+    "precache-manifest.80f025e0add92ba53e2468b37c0b67c2.js": "/dummy-profolio-website/precache-manifest.80f025e0add92ba53e2468b37c0b67c2.js",
     "service-worker.js": "/dummy-profolio-website/service-worker.js",
     "static/css/main.37b92ed5.chunk.css.map": "/dummy-profolio-website/static/css/main.37b92ed5.chunk.css.map",
-    "static/js/2.ea699a70.chunk.js.LICENSE": "/dummy-profolio-website/static/js/2.ea699a70.chunk.js.LICENSE",
+    "static/js/2.8ab65d40.chunk.js.LICENSE": "/dummy-profolio-website/static/js/2.8ab65d40.chunk.js.LICENSE",
     "static/media/Coding.png": "/dummy-profolio-website/static/media/Coding.4ef40d95.png",
     "static/media/Coding2.png": "/dummy-profolio-website/static/media/Coding2.89b1fd79.png",
     "static/media/home.css": "/dummy-profolio-website/static/media/landing.5fe75839.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ac74ea85.js",
-    "static/js/2.ea699a70.chunk.js",
+    "static/js/2.8ab65d40.chunk.js",
     "static/css/main.37b92ed5.chunk.css",
-    "static/js/main.fa9275e8.chunk.js"
+    "static/js/main.0d569e0b.chunk.js"
   ]
 }
