@@ -3,7 +3,7 @@ import { ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGro
 import { makeStyles } from '@material-ui/core/styles';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import ImageDialog from './ImageDialogue';
+// import ImageDialog from './ImageDialogue';
 
 
 const cssStyles = makeStyles(theme => ({
