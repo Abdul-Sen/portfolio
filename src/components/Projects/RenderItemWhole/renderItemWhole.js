@@ -106,7 +106,7 @@ function RenderItemWhole(props) {
                 </Grid>
             </div>
         </ListItem>
-        <hr></hr>
+        {props.renderHR && <hr></hr>}
     </Fragment>);
 }
 
