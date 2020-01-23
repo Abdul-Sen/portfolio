@@ -1,7 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
-  "homepage": "https://abdul-sen.github.io/dummy-profolio-website/",
+  "homepage": "https://abdul-sen.github.io/portfolio/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.8.0",
