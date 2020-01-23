@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import { Grid, Card, Container, CardContent, TextField, FormHelperText, FormControlLabel, Checkbox, Fab, Typography, Box } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-
+import Info from './Info';
 
 const styleHook = makeStyles(theme => ({
 

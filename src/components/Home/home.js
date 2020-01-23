@@ -39,7 +39,7 @@ class Home extends React.Component {
         <Container maxWidth="lg">
           <Grid container spacing={2} direction="row" justify="center" alignItems="center">
             <Grid item md={8}>
-              <Typography variant="h5" gutterBottom={false} style={{paddingTop:"20px"}}>
+              <Typography variant="h5" style={{paddingTop:"20px"}}>
                 This is who I am..
               </Typography>
             </Grid>

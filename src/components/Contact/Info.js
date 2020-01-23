@@ -1,4 +1,5 @@
 import React from 'react'
+import { Grid, Typography, Box } from '@material-ui/core';
 import PhoneIphoneIcon from '@material-ui/icons/PhoneIphone';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import RoomIcon from '@material-ui/icons/Room';
@@ -7,8 +8,8 @@ const Info = (props) => {
     return (
         <Grid container direction="row" alignItems="center" spacing={3}>
             <Grid item md={12}>
-                <Typography variant="h4" gutterBottom>
-                    <Box fontWeight="fontWeightLight" >
+                <Typography variant="h4" >
+                    <Box fontWeight="fontWeightLight">
                         About me
                     </Box>
                 </Typography>
@@ -40,3 +41,5 @@ const Info = (props) => {
         </Grid>
     )
 }
+
+export default Info;
