@@ -5,21 +5,21 @@ import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 
 
 const styleHook = makeStyles(theme => ({
-  
+
   card: {
     boxShadow: "0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2)",
-    transform: "scale(0.91)",
-    margin: "10px",
     backgroundColor: "#fbfbfb"
   },
   container: {
-    minHeight: "100vh",    
+    minHeight: "100vh",
+    padding: "50px"
   },
   fab: {
     marginLeft: "auto",
   },
 
 }));
+
 
 const INITIAL_STATE = {
   name: "",
@@ -42,7 +42,7 @@ function Contact(props) {
 
     console.log(emailInfo);
 
-    const payload = Object.assign({},emailInfo);
+    const payload = Object.assign({}, emailInfo);
 
     (async () => {
       const rawResponse = await fetch('https://us-central1-microservices-264117.cloudfunctions.net/sendMessage', {
@@ -90,27 +90,28 @@ function Contact(props) {
     <Fragment>
       <Container className={useStyle.container}>
 
-        <Grid container justify="center" spacing={2}>
-          <Grid item md={12}>
+        <Grid container justify="center" spacing={5} >
+          <Grid item md={6}>
+            <Info />
           </Grid>
-          <Grid item md={8} >
+          <Grid item md={6} >
             <Card className={useStyle.card}>
               <CardContent>
                 <form onSubmit={handleSubmit}>
                   <Grid container spacing={3} >
                     <Grid item sm={12} xs={12} md={12}>
-                      <Typography variant="h3" gutterBottom>
-                      <Box fontWeight="fontWeightLight" >
-                              Don't be a lurker, get in touch!
+                      <Typography variant="h4" gutterBottom>
+                        <Box fontWeight="fontWeightLight" >
+                          Don't be a lurker, get in touch!
                           </Box>
                       </Typography>
                       <hr></hr>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={3}>
+                    <Grid item xs={12} sm={12} md={6}>
                       <TextField value={emailInfo.name} fullWidth id="name-input" aria-describedby="name-helper-text" name="name" label="Name" onChange={handleChange} />
                       <FormHelperText id="name-helper-text">Your name (Optional)</FormHelperText>
                     </Grid>
-                    <Grid item xs={12} sm={12} md={3}>
+                    <Grid item xs={12} sm={12} md={6}>
                       <TextField fullWidth id="email-input" aria-describedby="email-helper-text" name="email" label="Email" value={emailInfo.email} onChange={handleChange} />
                       <FormHelperText id="email-helper-text">Your email (Optional)</FormHelperText>
 
@@ -130,8 +131,8 @@ function Contact(props) {
                         label="Send me a copy of the email (Temp disabled)"
                       />
                     </Grid>
-                    <Grid item className={useStyle.fab} md={3}>
-                      <Fab variant="extended" size="medium" color="primary" type="submit" value="submit">
+                    <Grid item className={useStyle.fab} md={4}>
+                      <Fab variant="extended" size="large" color="primary" type="submit" value="submit">
                         send message
                         <ArrowForwardIosIcon fontSize="small" />
                       </Fab>

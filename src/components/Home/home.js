@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Grid, Container } from '@material-ui/core';
+import { Grid, Container, Typography } from '@material-ui/core';
 import "./home.css";
 import codingImage from './Coding.png';
 import codingImage2 from './Coding2.png';
@@ -38,7 +38,11 @@ class Home extends React.Component {
 
         <Container maxWidth="lg">
           <Grid container spacing={2} direction="row" justify="center" alignItems="center">
-            <Grid item md={8}><h2>A bit about me..</h2></Grid>
+            <Grid item md={8}>
+              <Typography variant="h5" gutterBottom={false} style={{paddingTop:"20px"}}>
+                This is who I am..
+              </Typography>
+            </Grid>
             <Grid item md={12}>
               <Grid container direction="row" spacing={6} justify="center" alignItems="center">
                 <Grid item md={4} sm={12} xs={12}>
