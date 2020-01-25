@@ -39,25 +39,20 @@ export default function FloatingActionButtons() {
                     <p>follow me on: </p>
                 </Grid>
                 <Grid item md={1} sm={1} xs={2} className={cssClasses.gridItem}>
-                    <a href="https://github.com/Abdul-Sen"> {/* href in FAB does not redirect externally because of react router */}
-                        <Fab variant="round" size="small" color="primary">
+                        <Fab variant="round" size="small" color="primary" href="https://github.com/Abdul-Sen" target="_blank">
                             <GitHubIcon ></GitHubIcon>
                         </Fab>
-                    </a>
                 </Grid>
                 <Grid item md={1} sm={1} xs={2} className={cssClasses.gridItem}>
-                    <a href="https://www.linkedin.com/in/abdul-r/">
-                        <Fab variant="round" size="small" color="primary">
+                
+                        <Fab variant="round" size="small" color="primary" href="https://www.linkedin.com/in/abdul-r/" target="_blank">
                             <LinkedInIcon></LinkedInIcon>
                         </Fab>
-                    </a>
                 </Grid>
                 <Grid item md={1} sm={1} xs={2} className={cssClasses.gridItem}>
-                    <a href="https://twitter.com/AbdulRe47817062">
-                        <Fab variant="round" size="small" color="primary">
+                        <Fab variant="round" size="small" color="primary" href="https://twitter.com/AbdulRe47817062" target="_blank">
                             <TwitterIcon></TwitterIcon>
                         </Fab>
-                    </a>
                 </Grid>
             </Grid>
         </Fragment>

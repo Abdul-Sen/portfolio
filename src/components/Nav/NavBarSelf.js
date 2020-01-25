@@ -1,8 +1,19 @@
 import * as ROUTES from '../../routes/routes';
 import { Link } from 'react-router-dom';
 import React, { Fragment } from 'react';
-import {Button, Box, IconButton, SvgIcon } from '@material-ui/core';
+import { Button, IconButton, SvgIcon, Grid, Typography, Box } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
 
+const cssStyles = makeStyles(theme => ({
+  container: {
+      '& button': {
+          [theme.breakpoints.up("sm")] : {
+            color: "#ffffff",
+            fontWeight: "370",
+          },
+      }
+  }
+}));
 
 function HomeButton() {
     return (<IconButton aria-label="delete">
@@ -12,30 +23,45 @@ function HomeButton() {
     </IconButton>);
 }
 export default function NavBarSelf(props) {
+    const useStyle = cssStyles();
     return (
         <Fragment>
-            <Link to={ ROUTES.HOME}>
+            <Grid
+                container
+                direction="row"
+                justify="flex-start"
+                alignItems="center"
+                spacing={2}
+                className={useStyle.container}
+            >
+                <Grid item xs={12} sm={1} md={1}>
+                    <Link to={ROUTES.HOME} style={{textDecoration: "none"}}>
 
-                {props.display === "desktop" ? <HomeButton></HomeButton> : 
-                <Link to={ROUTES.HOME}>
-                    <Button>
-                        Home
-                    </Button>
-                </Link>}
+                        {props.display === "desktop" ? <HomeButton></HomeButton> :
+                            <Link to={ROUTES.HOME} style={{textDecoration: "none"}}>
+                                <Button>
+                                    Home
+                                </Button>
+                            </Link>}
 
-            </Link>
-            <Box width="2em" />
-            <Link to={ ROUTES.PROJECTS}>
-                <Button>
-                    Work/Projects
+                    </Link>
+                </Grid>
+                <Grid item xs={12} sm={3} md={2}>
+                    <Link to={ROUTES.PROJECTS} style={{textDecoration: "none"}}>
+                        <Button>
+                            Work/Projects
                     </Button>
-            </Link>
-            <Box width="2em" />
-            <Link to={ ROUTES.CONTACT}>
-                <Button>
-                    Contact
-                </Button>
-            </Link>
+                    </Link>
+                </Grid>
+                <Grid item xs={12} sm={3} md={1}>
+                    <Link to={ROUTES.CONTACT} style={{textDecoration: "none"}}>
+                        <Button>
+                            Contact
+                        </Button>
+                    </Link>
+                </Grid>
+
+            </Grid>
         </Fragment>
     );
 }

@@ -3,8 +3,8 @@
         {
             "tileTile":{
                 "gif": "/images/profolioSite.gif",
-                "projectLink": "https://github.com/Abdul-Sen/dummy-profolio-website",
-                "demoLink": "https://abdul-sen.github.io/dummy-profolio-website/",
+                "projectLink": "https://abdul-sen.github.io/portfolio/",
+                "demoLink": "https://abdul-sen.github.io/portfolio/",
                 "title": "This site!",
                 "description": "So why am I not using any one of the many readily available static profolio templates? To practice react ofcourse! This project allowed me to work with the new Hooks API for react.",
                 "tags": ["react","material UI","Google Cloud Functions","Github Pages"]

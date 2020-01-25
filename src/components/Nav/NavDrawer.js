@@ -8,7 +8,8 @@ import NavBarSelf from "./NavBarSelf";
 
 const useStyles = makeStyles({
   list: {
-    width: 240
+    width: 240,
+    paddingTop: "18px"
   },
   menuIcon: {
     padding:"10px"
