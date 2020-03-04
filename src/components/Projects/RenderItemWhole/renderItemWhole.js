@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 // import ImageDialog from './ImageDialogue';
+import Fade from 'react-reveal/Fade';
 
 
 const cssStyles = makeStyles(theme => ({
@@ -60,6 +61,8 @@ function RenderItemWhole(props) {
     }
 
     return (<Fragment>
+        
+        <Fade bottom>
         {/* { showDialog && <ImageDialog img={process.env.PUBLIC_URL + props.project.tileTile.gif}></ImageDialog>} */}
         <ListItem className={useStyle.listItem}>
             <div className={useStyle.root}>
@@ -106,6 +109,7 @@ function RenderItemWhole(props) {
                 </Grid>
             </div>
         </ListItem>
+        </Fade>
         {props.renderHR && <hr></hr>}
     </Fragment>);
 }

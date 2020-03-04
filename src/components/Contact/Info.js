@@ -6,9 +6,11 @@ import RoomIcon from '@material-ui/icons/Room';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import Fade from 'react-reveal/Fade';
 
 const Info = (props) => {
     return (
+        <Fade left>
         <Grid container direction="row" alignItems="center" spacing={3}>
             <Grid item md={12}>
                 <Typography variant="h4" >
@@ -77,6 +79,7 @@ const Info = (props) => {
                 </Box>
             </Grid>
         </Grid>
+        </Fade>
     )
 }
 

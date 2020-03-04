@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom'
 
 import About from '../About/about';
-import Contact from '../Contact/contact';
+import ContactContainer from '../Contact/contactContainer';
 import Home from '../Home/home';
 import Projects from '../Projects/projects'
 import Footer from '../Footer/footer';
@@ -27,7 +27,7 @@ class App extends React.Component {
             <Projects />
           )} />
           <Route exact path='/Contact' render={() => (
-            <Contact />
+            <ContactContainer />
           )} />
 
           <Route exact path='/About' render={() => (

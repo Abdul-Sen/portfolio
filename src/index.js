@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './components/App/app';
+import AppAlt from './components/appAlt/appAlt';
 
 import { BrowserRouter } from 'react-router-dom'
 
@@ -10,7 +11,8 @@ import { BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-          <App />
+          {/* <App /> */}
+          <AppAlt />
     </BrowserRouter>
     
 

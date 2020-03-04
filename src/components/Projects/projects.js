@@ -4,6 +4,10 @@ import ProjectInfo from './itemData.json';
 import RenderItemWhole from './RenderItemWhole/renderItemWhole';
 import { makeStyles } from '@material-ui/core/styles';
 import HooppStatic from './HooppStatic/HooppStatic.js';
+import Fade from 'react-reveal/Fade';
+import Rotate from 'react-reveal/Rotate';
+
+
 
 const cssStyles = makeStyles(theme => ({
   container: {
@@ -18,7 +22,7 @@ function Projects(props) {
   return (
     <Fragment>
       <Container className={useStyle.container} >
-
+<Fade left>
         <Grid justify="space-around" container direction="rows" alignItems="flex-start" >
           <Grid item md={10} sm={12}>
           <Typography variant="h3" gutterBottom>
@@ -32,7 +36,7 @@ function Projects(props) {
             <HooppStatic></HooppStatic>
           </Grid>
         </Grid>
-        
+        </Fade>   
         <Grid container direction="column" alignItems="center">
           <Grid item md={12}>
           <Typography variant="h3" gutterBottom>
