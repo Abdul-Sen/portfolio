@@ -20,7 +20,6 @@ export default function Nav() {
         <AppBar>
             <Box display="flex" justifyContent="flex-start" m={0} alignItems="center">
                 {matches? <NavBarSelf display="desktop"/> : <NavDrawer/>}
-                {/* <span>{`(min-width:600px) matches: ${matches}`}</span> */}
             </Box>
         </AppBar>
 

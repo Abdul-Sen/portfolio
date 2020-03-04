@@ -3,6 +3,8 @@ import { Grid,  Container } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Info from './Info';
 import ContactCard from './contactCard';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+
 
 
 const styleHook = makeStyles(theme => ({
@@ -80,7 +82,7 @@ function ContactContainer(props) {
 
   return (
     <Fragment>
-      <Container className={useStyle.container}>
+      <Container id="contactContainer" className={useStyle.container}>
         <Grid container justify="center" spacing={5} >
           <Grid item md={6}>
             <Info />

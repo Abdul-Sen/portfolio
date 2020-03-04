@@ -20,6 +20,7 @@ class Home extends React.Component {
     return (
       <Fragment>
         <Zoom>
+      <Container id="home" disableGutters={true}>
         <Grid spacing={0} container wrap="wrap" justify="space-evenly" direction="row">
           <Grid item sm={12} xs={12} md={12} lg={12} xl={12}>
             <div id="landingOverlay">
@@ -36,6 +37,7 @@ class Home extends React.Component {
             </div>
           </Grid>
         </Grid>
+        </Container>
         </Zoom>
       </Fragment>
     )

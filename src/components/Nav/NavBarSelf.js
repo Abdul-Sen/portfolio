@@ -1,8 +1,8 @@
 import * as ROUTES from '../../routes/routes';
-import { Link } from 'react-router-dom';
 import React, { Fragment } from 'react';
-import { Button, IconButton, SvgIcon, Grid, Typography, Box } from '@material-ui/core';
+import { Button, IconButton, SvgIcon, Grid } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import { HashLink as LinkTwo } from 'react-router-hash-link';
 
 const cssStyles = makeStyles(theme => ({
   container: {
@@ -35,30 +35,30 @@ export default function NavBarSelf(props) {
                 className={useStyle.container}
             >
                 <Grid item xs={12} sm={1} md={1}>
-                    <Link to={ROUTES.HOME} style={{textDecoration: "none"}}>
+                    <LinkTwo smooth={true} to={ROUTES.HOME} style={{textDecoration: "none"}}>
 
                         {props.display === "desktop" ? <HomeButton></HomeButton> :
-                            <Link to={ROUTES.HOME} style={{textDecoration: "none"}}>
+                            <LinkTwo to={ROUTES.HOME} smooth={true} style={{textDecoration: "none"}}>
                                 <Button>
                                     Home
                                 </Button>
-                            </Link>}
+                            </LinkTwo>}
 
-                    </Link>
+                    </LinkTwo>
                 </Grid>
                 <Grid item xs={12} sm={3} md={2}>
-                    <Link to={ROUTES.PROJECTS} style={{textDecoration: "none"}}>
-                        <Button>
+                <LinkTwo  smooth={true} to={ROUTES.PROJECTS} style={{textDecoration: "none"}} >
+                    <Button>
                             Work/Projects
                     </Button>
-                    </Link>
+                    </LinkTwo>
                 </Grid>
                 <Grid item xs={12} sm={3} md={1}>
-                    <Link to={ROUTES.CONTACT} style={{textDecoration: "none"}}>
+                    <LinkTwo  smooth={true} to={ROUTES.CONTACT} style={{textDecoration: "none"}} >
                         <Button>
                             Contact
                         </Button>
-                    </Link>
+                    </LinkTwo>
                 </Grid>
 
             </Grid>

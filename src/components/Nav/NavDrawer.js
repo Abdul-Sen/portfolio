@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
@@ -47,13 +47,13 @@ export default function NavDrawer() {
   );
 
   return (
-    <div>
+      <Fragment>
       <Button onClick={toggleDrawer("left", true)}>
       <MenuIcon className={classes.menuIcon}></MenuIcon>
       </Button>
       <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
         {sideList("left")}
       </Drawer>
-    </div>
+      </Fragment>
   );
 }
