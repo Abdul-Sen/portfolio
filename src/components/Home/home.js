@@ -19,7 +19,7 @@ class Home extends React.Component {
             <div id="landingOverlay">
               <div id="landing">
                 <Grid spacing={0} container justify="flex-start" direction="column">
-                  <Grid item md={6}>
+                  <Grid item md={6} id="titleContainer">
                     <Typography variant="h3" id="title" >hello, I'm Abdul.</Typography>
                   </Grid>
                   <Grid item md={6}>
