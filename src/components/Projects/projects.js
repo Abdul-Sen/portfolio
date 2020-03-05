@@ -21,7 +21,7 @@ function Projects(props) {
   
   return (
     <Fragment>
-      <Container id="projectsContainer" className={useStyle.container} >
+      <Container id="projectsContainer" maxWidth={false} className={useStyle.container} >
 <Fade left>
         <Grid justify="space-around" container direction="rows" alignItems="flex-start" >
           <Grid item md={10} sm={12}>

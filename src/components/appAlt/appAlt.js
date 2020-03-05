@@ -8,7 +8,7 @@ import ContactContainer from '../Contact/contactContainer';
 
 function AppAlt(props){
     return(
-        <Container disableGutters={true}>
+        <Container maxWidth={false} disableGutters={true}>
             <Nav/>
             <Home />
             <Projects />

@@ -82,7 +82,7 @@ function ContactContainer(props) {
 
   return (
     <Fragment>
-      <Container id="contactContainer" className={useStyle.container}>
+      <Container id="contactContainer" maxWidth={false} className={useStyle.container}>
         <Grid container justify="center" spacing={5} >
           <Grid item md={6}>
             <Info />
