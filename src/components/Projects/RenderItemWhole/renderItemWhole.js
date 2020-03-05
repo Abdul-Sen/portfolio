@@ -98,9 +98,9 @@ function RenderItemWhole(props) {
                         <ButtonGroup className={useStyle.buttonGroup} size="small" aria-label="small outlined button group">
                             {
                                 props.project.tileTile.tags.map((currentValue, currentIndex) => {
-                                    return (<div>
+                                    return (<div key={currentIndex}>
                                         {(currentIndex === 0)? <span>Tech tags: </span> : null }
-                                        <Button className={useStyle.tagButton} key={currentIndex}>{currentValue}</Button>
+                                                <Button className={useStyle.tagButton}>{currentValue}</Button>
                                         </div>)
                                 })
                             }

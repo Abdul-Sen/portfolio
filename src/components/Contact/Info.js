@@ -13,14 +13,14 @@ const Info = (props) => {
         <Fade left>
         <Grid container direction="row" alignItems="center" spacing={3}>
             <Grid item md={12}>
-                <Typography variant="h4" >
+                <Typography component={'span'} variant="h4" >
                     <Box fontWeight="fontWeightLight">
                         About me
                     </Box>
                 </Typography>
             </Grid>
             <Grid item md={11}>
-                <Typography variant="body1" gutterBottom>
+                <Typography component={'span'} variant="body1" gutterBottom>
                     <Box>
                         My name is Abdul Rehman, and I am a final semester computer programming student at Seneca College. I am actively searching for a place to work where I can learn and grow as a developer.
               <br /><br />
@@ -29,29 +29,29 @@ const Info = (props) => {
                 </Typography>
             </Grid>
             <Grid item md={12} sm={12} xs={12}>
-            <Typography variant="h5" >
+            <Typography component={'span'} variant="h5" >
                     <Box fontWeight="fontWeightLight" paddingLeft="20px">
                         Contact
                     </Box>
                 </Typography>
             </Grid>
             <Grid item md={12} sm={12} xs={12}>
-                <Typography variant="body2" style={{ display: "flex", alignItems: "center" }}>
+                <Typography component={'span'} variant="body2" style={{ display: "flex", alignItems: "center" }}>
                     <PhoneIphoneIcon /> &ensp; +1 437-928-1996
           </Typography>
             </Grid>
             <Grid item md={12} sm={12}>
-                <Typography variant="body2" style={{ display: "flex", alignItems: "center" }}>
+                <Typography component={'span'} variant="body2" style={{ display: "flex", alignItems: "center" }}>
                     <MailOutlineIcon /> &ensp; abdul-rehman@myseneca.ca
           </Typography>
             </Grid>
             <Grid item md={12}>
-                <Typography variant="body2" style={{ display: "flex", alignItems: "center" }}>
+                <Typography component={'span'} variant="body2" style={{ display: "flex", alignItems: "center" }}>
                     <RoomIcon /> &ensp; 40 Guildcrest Dr, Scarborough, ON M1E 1E4
           </Typography>
             </Grid>
             <Grid item md={12} sm={12}>
-            <Typography variant="h5" >
+            <Typography component={'span'} variant="h5" >
                     <Box fontWeight="fontWeightLight" paddingLeft="20px">
                         Online presence
                     </Box>

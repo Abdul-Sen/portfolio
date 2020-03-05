@@ -88,7 +88,7 @@ function ContactCard(props)
             <form onSubmit={handleSubmit}>
               <Grid container spacing={3} >
                 <Grid item sm={12} xs={12} md={12}>
-                  <Typography variant="h4" gutterBottom>
+                  <Typography component={'span'} variant="h4" gutterBottom>
                     <Box fontWeight="fontWeightLight" >
                       Don't be a lurker, get in touch!
                       </Box>
