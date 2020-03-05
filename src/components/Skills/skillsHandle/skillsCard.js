@@ -4,8 +4,11 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme=>({
     root:{
-        maxWidth:"90%",
-        marginLeft:"5%"
+        boxShadow: "0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2)",
+        // maxWidth:"90%",
+        margin: "auto",
+        maxWidth:"500px",
+        minHeight: "700px"
     },
     title:{
         textAlign:"center"
@@ -24,7 +27,7 @@ function SkillsCard({children, title}){
             
             <Card className={cssClass.root}>
                 <CardContent>
-                    <Typography component={'span'} className={cssClass.title} variant={"h4"}>
+                    <Typography display="block"  component={'span'} className={cssClass.title} variant={"h4"}>
                         {title}
                     </Typography>
                     <Typography component={'span'} className={cssClass.body}>

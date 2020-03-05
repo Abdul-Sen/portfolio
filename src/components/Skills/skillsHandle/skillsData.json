@@ -1,13 +1,14 @@
 {
     "frontend":{
-        "Core": ["HTML5","CSS3","Modern ES6"],
-        "Web frameworks": ["React","Flutter","Angular 7"],
-        "Styling": ["Bootstrap 4", "Material UI","SASS"],
-        "State management solutions": ["Redux", "Obserable"]
+        "Core": ["Modern ES6","CSS3","HTML5"],
+        "Web frameworks": ["React *","Flutter","Angular 7","jQuery"],
+        "Styling": ["Bootstrap 4", "Material UI *","SASS"],
+        "State management solutions": ["Redux *", "RxJS"]
     },
     "backend":{
-        "languages": ["Javascript", "Powershell", "C#"],
-        "environment": ["NodeJS",".NET Core 3.0"],
-        "databases": ["MongoDB","PostGreSQL"]
+        "languages": ["Javascript *", "C#"],
+        "environments": ["NodeJS w/ Express *",".NET Core 3.0"],
+        "databases": ["MongoDB *","PostGreSQL", "Oracle SQL"],
+        "tools": ["Git","Powershell","Azure & Azure Devops","GCP functions","Azure automation runbooks & functions","Heorku"]
     }
 }

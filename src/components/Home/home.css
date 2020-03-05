@@ -1,7 +1,6 @@
 
 @media (min-width:960px){
     #landing {
-  
         background-image: url(landing.png) ;
         background-repeat: no-repeat;
         background-position: 80% 70%;
@@ -9,14 +8,25 @@
         padding: 200px;
     }
 }
-
+#sub {
+    font-weight: 300;
+}
+#title{
+    margin: 20px 20px 20px 0px;
+    font-weight: 300;
+}
 #landingOverlay {
-    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    background: linear-gradient(200deg, #C9D6FF, #E2E2E2, rgb(209, 184, 184));
+    background-size: 200% 200%;
+    
+    animation: fluidGrid 15s infinite;
+}
+@keyframes fluidGrid {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
 }
 
-#landing * {
-    font-family: monospace;
-}
 
 p {
     text-align: justify;

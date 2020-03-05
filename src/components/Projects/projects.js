@@ -2,26 +2,16 @@ import React, { Fragment } from 'react';
 import { Container, Grid, Typography, Box } from '@material-ui/core';
 import ProjectInfo from './itemData.json';
 import RenderItemWhole from './RenderItemWhole/renderItemWhole';
-import { makeStyles } from '@material-ui/core/styles';
 import HooppStatic from './HooppStatic/HooppStatic.js';
 import Fade from 'react-reveal/Fade';
-import Rotate from 'react-reveal/Rotate';
 
-
-
-const cssStyles = makeStyles(theme => ({
-  container: {
-    backgroundColor: "rgba(238,238,238,0.2)"
-  }
-}));
 
 function Projects(props) {
   let projectsArray = ProjectInfo.project;
-  const useStyle = cssStyles();
 
   return (
     <Fragment>
-      <Container id="projectsContainer" maxWidth={false} className={useStyle.container} >
+      <Container id="projectsContainer" maxWidth={false} >
         <Fade left>
           <Grid justify="space-around" container direction="row" alignItems="flex-start" >
             <Grid item md={10} sm={12}>

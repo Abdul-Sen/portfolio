@@ -34,28 +34,35 @@ export default function NavBarSelf(props) {
                 spacing={2}
                 className={useStyle.container}
             >
-                <Grid item xs={12} sm={1} md={1}>
+                <Grid item xs={12} sm={1} md={1} style={{textAlign:"center"}}>
                     <LinkTwo smooth={true} to={ROUTES.HOME} style={{textDecoration: "none"}}>
 
                         {props.display === "desktop" ? <HomeButton></HomeButton> :
                             <LinkTwo to={ROUTES.HOME} smooth={true} style={{textDecoration: "none"}}>
-                                <Button>
+                                <Button  fullWidth>
                                     Home
                                 </Button>
                             </LinkTwo>}
 
                     </LinkTwo>
                 </Grid>
-                <Grid item xs={12} sm={3} md={2}>
-                <LinkTwo  smooth={true} to={ROUTES.PROJECTS} style={{textDecoration: "none"}} >
-                    <Button>
-                            Work/Projects
+                <Grid item xs={12} sm={3} md={2}  style={{textAlign:"center"}}>
+                <LinkTwo smooth={true} to={ROUTES.SKILLS} style={{textDecoration: "none"}} >
+                    <Button  fullWidth>
+                            Skills
                     </Button>
                     </LinkTwo>
                 </Grid>
-                <Grid item xs={12} sm={3} md={1}>
+                <Grid item xs={12} sm={3} md={2}  style={{textAlign:"center"}}>
+                <LinkTwo  smooth={true} to={ROUTES.PROJECTS} style={{textDecoration: "none"}} >
+                    <Button fullWidth>
+                            Work
+                    </Button>
+                    </LinkTwo>
+                </Grid>
+                <Grid item xs={12} sm={3} md={2}  style={{textAlign:"center"}}>
                     <LinkTwo  smooth={true} to={ROUTES.CONTACT} style={{textDecoration: "none"}} >
-                        <Button>
+                        <Button fullWidth>
                             Contact
                         </Button>
                     </LinkTwo>
