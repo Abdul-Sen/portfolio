@@ -6,7 +6,7 @@
                 "projectLink": "https://abdul-sen.github.io/portfolio/",
                 "demoLink": "https://abdul-sen.github.io/portfolio/",
                 "title": "This site!",
-                "description": "So why am I not using any one of the many readily available static profolio templates? To practice react ofcourse! This project allowed me to work with the new Hooks API for react.",
+                "description": "Built with React and hosted on Github Pages, this site uses GCP functions to securely sends any messages from contact form",
                 "tags": ["react","material UI","Google Cloud Functions","Github Pages"]
             }
         },
@@ -16,7 +16,7 @@
                 "title": "Recipe Web App",
                 "projectLink": "https://github.com/Abdul-Sen/Recipe-application",
                 "demoLink": "https://vast-ravine-81065.herokuapp.com/",
-                "description": "Hungry and don't know what to cook? Fear not! This app will help you find random recipes and through the power of CRUD, you can add your personal touch to the recipes. This app was build to help me understand good vs bad RESTful API desgin, and to work with cool APIs in the process.",
+                "description": "Hungry and don't know what to cook? Fear not! This app will help you find random recipes and through the power of CRUD, you can add your personal touch to the recipes. This app was build to help me understand good vs bad RESTful API design, and to work with a cool 3rd party recipe API in the process.",
                 "tags": ["nodeJs","bootstrap 4.0","handlebars","mongoDB", "PostgreSQL"]
             }
         },

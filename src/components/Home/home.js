@@ -23,7 +23,7 @@ class Home extends React.Component {
                     <Typography variant="h3" id="title" >hello, I'm Abdul.</Typography>
                   </Grid>
                   <Grid item md={6}>
-                    <Typography variant="h6" id="sub">Welcome to my portfolio!</Typography>
+                    <Typography variant="h4" id="sub">Fullstack web developer</Typography>
                   </Grid>
                 </Grid>
               </div>

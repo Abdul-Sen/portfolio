@@ -45,11 +45,6 @@ const Info = (props) => {
                     <MailOutlineIcon /> &ensp; abdul-rehman@myseneca.ca
           </Typography>
             </Grid>
-            <Grid item md={12}>
-                <Typography component={'span'} variant="body2" style={{ display: "flex", alignItems: "center" }}>
-                    <RoomIcon /> &ensp; 40 Guildcrest Dr, Scarborough, ON M1E 1E4
-          </Typography>
-            </Grid>
             <Grid item md={12} sm={12}>
             <Typography component={'span'} variant="h5" >
                     <Box fontWeight="fontWeightLight" paddingLeft="20px">

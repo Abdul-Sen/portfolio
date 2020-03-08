@@ -57,40 +57,40 @@ export default function CustomizedExpansionPanels() {
   return (
     <div>
         <p>
-            Worked in an agile devops team as a systems developer, hands-on automation experience with PowerShell and C#
+            Worked in a DevOps team as a systems developer, automating backend systems using C# and PowerShell. Some highlights include:
         </p>
       <ExpansionPanel square expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
         <ExpansionPanelSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography><li>Researched, built an MVP, and setup production version of the microservices architecture for our team</li></Typography>
+          <Typography><li>Researching, building an MVP, and setting up the production version of microservices architecture for my team on Azure</li></Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Worked alongside other teammates to analyze various microservices architectural options. Build a minimum viable product
+            Worked alongside other teammates to evaluate various microservices architectural options. Build a minimum viable product
             using Azure Automation Runbooks and Azure Cloud Function App to meet the company's hybrid infrastructure requirements. Setup production 
-            pipeline from Azure DevOps to automate build and release pipeline for our production setup, including setting up automated Postman API testing.
+            pipeline from Azure DevOps to automate build and release pipeline for our production setup, including setting up automated API testing using PostMan.
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel square expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
         <ExpansionPanelSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography><li>Built an automated service uptime tracking script</li></Typography>
+          <Typography><li>Building an automated service uptime tracking script</li></Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
             Built an automation script using C# and Selenium to track uptime of a company site. Script
-            checks for performance degradation and sends alert via SMTP to team members. Logs each instance
+            checked for performance degradation and sends alert via email to team members. Logs each instance
             to help track potential problems using log4net
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>
       <ExpansionPanel square expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <ExpansionPanelSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography><li>Worked with Microsoft Graph API to automate InTune security alerts</li></Typography>
+          <Typography><li>Working with Microsoft Graph API to automate InTune security alerts</li></Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <Typography>
-            Used <a target="_blank" href="https://github.com/microsoft/Intune-PowerShell-SDK" >Intune PowerShell SDK</a> to work with Intune's Graph API to automate client communications about security alerts.
-            Script filters clients based on provided OS version criteria and automatically alerts users about potential security vulnerabilities
+            Used <a target="_blank" style={{textDecoration:"none"}} href="https://github.com/microsoft/Intune-PowerShell-SDK" >Intune PowerShell SDK</a> to work with Intune's Graph API to automate company-wide client communication about security alerts.
+            Script filters clients based on provided OS version criteria and automatically send alerts users about potential security vulnerabilities
           </Typography>
         </ExpansionPanelDetails>
       </ExpansionPanel>

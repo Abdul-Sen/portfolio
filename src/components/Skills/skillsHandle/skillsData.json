@@ -9,6 +9,6 @@
         "languages": ["Javascript *", "C#"],
         "environments": ["NodeJS w/ Express *",".NET Core 3.0"],
         "databases": ["MongoDB *","PostGreSQL", "Oracle SQL"],
-        "tools": ["Git","Powershell","Azure & Azure Devops","GCP functions","Azure automation runbooks & functions","Heorku"]
+        "tools": ["Git","Powershell","Azure & Azure Devops","GCP functions","Azure automation runbooks & functions","Heroku"]
     }
 }
