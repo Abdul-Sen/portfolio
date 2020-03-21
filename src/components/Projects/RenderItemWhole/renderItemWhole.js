@@ -58,7 +58,6 @@ function RenderItemWhole(props) {
     const [showDialog,setShowDialog] = useState(false);
 
     const handleCardClick = (event) =>{
-        console.log(`card cliced`);
         setShowDialog(showDialog => !showDialog);
     }
 

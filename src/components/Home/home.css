@@ -10,9 +10,17 @@
 }
 
 @media only screen and (max-width: 960px) {
-    #titleContainer {
+    /* #titleContainer {
         margin-top: 15%;
-    }    
+    }
+    #landing {
+        text-align: center;
+    } */
+    #landingOverlay {
+        padding-bottom: 200px;
+        padding-top: 200px;
+        text-align: center;
+    }
 }
 
 #sub {

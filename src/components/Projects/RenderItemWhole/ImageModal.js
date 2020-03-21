@@ -8,8 +8,15 @@ const cssStyles = makeStyles(theme => ({
         top: "50%",
         left: "50%",
         transform: "translate(-50%, -55%)",
-        width: "90%",
-        height: "90%",
+        [theme.breakpoints.up("md")]: {
+            width: "90%",
+            height: "90%",
+        },
+        [theme.breakpoints.down("md")]:{
+            width: "90%",
+            height: "60%"
+        }
+
     }
 }));
 
@@ -19,10 +26,9 @@ function ImageModal(props) {
     const cssStyle = cssStyles();
     return (
         <Modal
-            style={{borderRadius: "2%"}}
             aria-labelledby="simple-modal-title"
             aria-describedby="simple-modal-description"
-            open={props.handler}
+            open={true}
             onClose={props.handler}
         >
             <img className={cssStyle.img} src={props.path}></img>
