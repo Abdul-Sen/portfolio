@@ -1,8 +1,9 @@
 import React, { Fragment, useState } from 'react';
-import { ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGroup} from '@material-ui/core';
+import { ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGroup, Modal} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ImageModal from './ImageModal';
 // import ImageDialog from './ImageDialogue';
 import Fade from 'react-reveal/Fade';
 
@@ -57,15 +58,15 @@ function RenderItemWhole(props) {
     const [showDialog,setShowDialog] = useState(false);
 
     const handleCardClick = (event) =>{
+        console.log(`card cliced`);
         setShowDialog(showDialog => !showDialog);
     }
 
     return (<Fragment>
-        
         <Fade bottom>
-        {/* { showDialog && <ImageDialog img={process.env.PUBLIC_URL + props.project.tileTile.gif}></ImageDialog>} */}
         <ListItem className={useStyle.listItem}>
             <div className={useStyle.root}>
+                {showDialog && <ImageModal path={process.env.PUBLIC_URL + props.project.tileTile.gif} handler={handleCardClick} />}
                 <Grid container spacing={10} direction="row">
                     <Grid item md={4} sm={12} xs={12}>
                         <h4>{props.project.tileTile.title}</h4>

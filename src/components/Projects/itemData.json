@@ -2,6 +2,16 @@
     "project": [
         {
             "tileTile":{
+                "gif": "/images/devoro.gif",
+                "projectLink": "https://abdul-sen.github.io/portfolio/",
+                "demoLink": "https://abdul-sen.github.io/portfolio/",
+                "title": "Dev Social Site",
+                "description": "Fullstack web app showcasing both frontend design & state management skills as well as building of backend server and database. Implemented API support for infinite scroll and utilization of that feature with React.",
+                "tags": ["React/redux","Material UI","MongoDB","Node/Express","Github Pages"]
+            }
+        },
+        {
+            "tileTile":{
                 "gif": "/images/profolioSite.gif",
                 "projectLink": "https://abdul-sen.github.io/portfolio/",
                 "demoLink": "https://abdul-sen.github.io/portfolio/",
@@ -17,16 +27,6 @@
                 "projectLink": "https://github.com/Abdul-Sen/Recipe-application",
                 "demoLink": "https://vast-ravine-81065.herokuapp.com/",
                 "description": "Hungry and don't know what to cook? Fear not! This app will help you find random recipes and through the power of CRUD, you can add your personal touch to the recipes. This app was build to help me understand good vs bad RESTful API design, and to work with a cool 3rd party recipe API in the process.",
-                "tags": ["nodeJs","bootstrap 4.0","handlebars","mongoDB", "PostgreSQL"]
-            }
-        },
-        {
-            "tileTile":{
-                "gif": "/images/web322.gif",
-                "projectLink": "https://github.com/Abdul-Sen/Employee-Management-System",
-                "demoLink": "https://mysterious-fjord-83697.herokuapp.com/",
-                "title": "Employee Management CRUD app",
-                "description": "Term project for WEB322- Server-side w/ NodeJS. This app is hosted on Heroku free tier so it will take a few seconds to boot up.",
                 "tags": ["nodeJs","bootstrap 4.0","handlebars","mongoDB", "PostgreSQL"]
             }
         }
