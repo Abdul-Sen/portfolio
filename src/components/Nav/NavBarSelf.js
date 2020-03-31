@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import { Button, IconButton, SvgIcon, Grid, Icon } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import { HashLink as LinkTwo } from 'react-router-hash-link';
-
+import GetAppIcon from '@material-ui/icons/GetApp';
 const cssStyles = makeStyles(theme => ({
   container: {
       '& button': {
@@ -66,7 +66,12 @@ export default function NavBarSelf(props) {
                         </Button>
                     </LinkTwo>
                 </Grid>
-
+                <Grid item xs={12} sm={2} md={2} xs  style={{textAlign:"center", marginLeft:"auto"}}>
+                    <Button style={{background:"linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)"}} href="https://docs.google.com/uc?export=download&id=1mhjIkcNp9ZRiTo5x-ZORuTVArGkCOw3J" >       
+                        <GetAppIcon />
+                        RESUMÉ
+                    </Button>
+                </Grid>
             </Grid>
         </Fragment>
     );

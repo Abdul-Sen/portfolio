@@ -7,7 +7,7 @@
                 "demoLink": "https://sleepy-sierra-88885.herokuapp.com/",
                 "title": "Dev Social Site",
                 "description": "Fullstack web app showcasing both frontend design & state management skills as well as building of backend server and database. Implemented API support for infinite scroll and utilization of that feature with React.",
-                "tags": ["React/redux","Material UI","MongoDB","Node/Express","Github Pages"]
+                "tags": ["React/redux","Material UI","MongoDB","Node/Express","Heroku"]
             }
         },
         {
