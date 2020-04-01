@@ -2,7 +2,7 @@
     "project": [
         {
             "tileTile":{
-                "gif": "/images/devoro.gif",
+                "gif": "/images/devo.mp4",
                 "projectLink": "https://github.com/Abdul-Sen/Fullstack-redux-store-app",
                 "demoLink": "https://sleepy-sierra-88885.herokuapp.com/",
                 "title": "Dev Social Site",
@@ -12,7 +12,7 @@
         },
         {
             "tileTile":{
-                "gif": "/images/profolioSite.gif",
+                "gif": "/images/portfolio.mp4",
                 "projectLink": "https://abdul-sen.github.io/portfolio/",
                 "demoLink": "https://abdul-sen.github.io/portfolio/",
                 "title": "This site!",
@@ -22,7 +22,7 @@
         },
         {
             "tileTile":{
-                "gif": "/images/recipeApp.gif",
+                "gif": "/images/recipeApp2_compressed.mp4",
                 "title": "Recipe Web App",
                 "projectLink": "https://github.com/Abdul-Sen/Recipe-application",
                 "demoLink": "https://vast-ravine-81065.herokuapp.com/",

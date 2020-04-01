@@ -1,10 +1,9 @@
 import React, { Fragment, useState } from 'react';
-import { ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGroup, Modal} from '@material-ui/core';
+import { ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGroup, Modal } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ImageModal from './ImageModal';
-// import ImageDialog from './ImageDialogue';
 import Fade from 'react-reveal/Fade';
 
 
@@ -24,8 +23,8 @@ const cssStyles = makeStyles(theme => ({
     },
     paper: {
         borderRadius: "2em",
-        maxHeight: "100%",
-        maxWidth: "100%",
+        maxWidth: 600,
+        maxHeight: 800,
         textAlign: "center",
         backgroundColor: "#FFFFFF",
         boxShadow: "5px 5px 10px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2)",
@@ -36,12 +35,6 @@ const cssStyles = makeStyles(theme => ({
 
         }
     },
-    paperContent: {
-        maxHeight: "300px",
-        maxWidth: "auto",
-        padding: "25px",
-        borderRadius: "2em"
-    },
     tagButton: {
         fontSize: "12px",
         color: "#39739d",
@@ -50,65 +43,76 @@ const cssStyles = makeStyles(theme => ({
     },
     buttonGroup: {
         flexWrap: "wrap"
+    },
+    test:{
+        objectFit:"fill",
+        height:"350px",
     }
 }))
 
 function RenderItemWhole(props) {
     const useStyle = cssStyles();
-    const [showDialog,setShowDialog] = useState(false);
+    const [showDialog, setShowDialog] = useState(false);
 
-    const handleCardClick = (event) =>{
+    const handleCardClick = (event) => {
         setShowDialog(showDialog => !showDialog);
     }
 
     return (<Fragment>
         <Fade bottom>
-        <ListItem className={useStyle.listItem}>
-            <div className={useStyle.root}>
-                {showDialog && <ImageModal path={process.env.PUBLIC_URL + props.project.tileTile.gif} handler={handleCardClick} />}
-                <Grid container spacing={10} direction="row">
-                    <Grid item md={4} sm={12} xs={12}>
-                        <h4>{props.project.tileTile.title}</h4>
-                        <p>{props.project.tileTile.description}</p>
-                        <Grid container >
-                            <Grid item className={useStyle.content} md={12}>
-                                <Grid container direction="row" spacing={3}>
-                                    <Grid item md={6}>
-                                        <Button  variant="outlined" target="_blank" href={props.project.tileTile.projectLink}>GitHub</Button>
-                                    </Grid>
-                                    <Grid item md={6}>
-                                        <Fab href={props.project.tileTile.demoLink} target="_blank" variant="extended" size="medium" color="primary">
-                                            Demo
+            <ListItem className={useStyle.listItem}>
+                <div className={useStyle.root}>
+                    {showDialog && <ImageModal path={process.env.PUBLIC_URL + props.project.tileTile.gif} handler={handleCardClick} />}
+                    <Grid container spacing={10} direction="row">
+                        <Grid item md={4} sm={12} xs={12}>
+                            <h4>{props.project.tileTile.title}</h4>
+                            <p>{props.project.tileTile.description}</p>
+                            <Grid container >
+                                <Grid item className={useStyle.content} md={12}>
+                                    <Grid container direction="row" spacing={3}>
+                                        <Grid item md={6}>
+                                            <Button variant="outlined" target="_blank" href={props.project.tileTile.projectLink}>GitHub</Button>
+                                        </Grid>
+                                        <Grid item md={6}>
+                                            <Fab href={props.project.tileTile.demoLink} target="_blank" variant="extended" size="medium" color="primary">
+                                                Demo
                                         <ArrowForwardIosIcon fontSize="small" />
-                                        </Fab>
+                                            </Fab>
+                                        </Grid>
                                     </Grid>
                                 </Grid>
                             </Grid>
                         </Grid>
-                    </Grid>
-                    <Grid item md={8} sm={12} xs={12}>
-                        <Card className={useStyle.paper}>
-                            <CardActionArea onClick={handleCardClick}>
-                                <CardMedia component="img" alt="card image failed to load" height="100%" image={process.env.PUBLIC_URL + props.project.tileTile.gif}>
-                                </CardMedia>
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                    <Grid item md={12}>  
-                        <ButtonGroup className={useStyle.buttonGroup} size="small" aria-label="small outlined button group">
-                            {
-                                props.project.tileTile.tags.map((currentValue, currentIndex) => {
-                                    return (<div key={currentIndex}>
-                                        {(currentIndex === 0)? <span>Tech tags: </span> : null }
-                                                <Button className={useStyle.tagButton}>{currentValue}</Button>
+                        <Grid item md={8} sm={12} xs={12}>
+                            <Card className={useStyle.paper}>
+                                <CardActionArea onClick={handleCardClick}>
+                                    <CardMedia
+                                        className={useStyle.test}
+                                        component="video"
+                                        loop
+                                        autoPlay
+                                        alt="card image failed to load"
+                                        src={process.env.PUBLIC_URL + props.project.tileTile.gif}
+                                        title={`${props.project.tileTile.title} (Click to view)`}
+                                    />
+                                </CardActionArea>
+                            </Card>
+                        </Grid>
+                        <Grid item md={12}>
+                            <ButtonGroup className={useStyle.buttonGroup} size="small" aria-label="small outlined button group">
+                                {
+                                    props.project.tileTile.tags.map((currentValue, currentIndex) => {
+                                        return (<div key={currentIndex}>
+                                            {(currentIndex === 0) ? <span>Tech tags: </span> : null}
+                                            <Button className={useStyle.tagButton}>{currentValue}</Button>
                                         </div>)
-                                })
-                            }
-                        </ButtonGroup>
+                                    })
+                                }
+                            </ButtonGroup>
+                        </Grid>
                     </Grid>
-                </Grid>
-            </div>
-        </ListItem>
+                </div>
+            </ListItem>
         </Fade>
         {props.renderHR && <hr></hr>}
     </Fragment>);
