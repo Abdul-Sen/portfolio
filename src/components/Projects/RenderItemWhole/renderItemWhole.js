@@ -85,16 +85,20 @@ function RenderItemWhole(props) {
                         </Grid>
                         <Grid item md={8} sm={12} xs={12}>
                             <Card className={useStyle.paper}>
-                                <CardActionArea onClick={handleCardClick}>
-                                    <CardMedia
+                                 <CardActionArea onClick={handleCardClick}>
+                                   <CardMedia
                                         className={useStyle.test}
                                         component="video"
                                         loop
-                                        autoPlay
+                                        autoPlay 
+                                        muted
                                         alt="card image failed to load"
                                         src={process.env.PUBLIC_URL + props.project.tileTile.gif}
                                         title={`${props.project.tileTile.title} (Click to view)`}
                                     />
+                                {/* <video loop autoPlay={true} controls muted>
+                                     <source  src={process.env.PUBLIC_URL + props.project.tileTile.gif} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+                                </video> */}
                                 </CardActionArea>
                             </Card>
                         </Grid>

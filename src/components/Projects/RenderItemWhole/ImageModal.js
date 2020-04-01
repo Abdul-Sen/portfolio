@@ -31,7 +31,7 @@ function ImageModal(props) {
             open={true}
             onClose={props.handler}
         >
-            <video className={cssStyle.img} loop autoPlay>
+            <video className={cssStyle.img} loop autoPlay controls>
                 <source  src={props.path} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
             </video>
         </Modal>
