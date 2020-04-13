@@ -1,6 +1,7 @@
 import React from 'react';
 import { Modal } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import ReactPlayer from 'react-player';
 
 const cssStyles = makeStyles(theme => ({
     img: {
@@ -31,9 +32,7 @@ function ImageModal(props) {
             open={true}
             onClose={props.handler}
         >
-            <video className={cssStyle.img} loop autoPlay controls>
-                <source  src={props.path} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-            </video>
+        <ReactPlayer height={"90%"} width={"70%"} className={cssStyle.img} playing={true} muted loop controls={false}  url={props.path} />
         </Modal>
     )
 }

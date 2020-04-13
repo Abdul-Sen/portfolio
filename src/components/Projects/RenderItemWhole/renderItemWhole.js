@@ -5,6 +5,7 @@ import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
 import ImageModal from './ImageModal';
 import Fade from 'react-reveal/Fade';
+import Thumbnail from './thumbnail/thumbnail';
 
 
 const cssStyles = makeStyles(theme => ({
@@ -28,11 +29,8 @@ const cssStyles = makeStyles(theme => ({
         textAlign: "center",
         backgroundColor: "#FFFFFF",
         boxShadow: "5px 5px 10px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2)",
-        "&:hover": {
-            boxShadow: "1px 8px 17px grey",
-            transform: " translate(-4px, -4px)",
-            transition: "all .4s ease"
-
+        '&:hover':{
+            //Make play icon appear
         }
     },
     tagButton: {
@@ -47,6 +45,16 @@ const cssStyles = makeStyles(theme => ({
     test:{
         objectFit:"fill",
         height:"350px",
+    },
+    playButton:{
+        position: "absolute",
+        top : "50%",
+        left : "50%",
+        transform: "translate(-50%, -50%)",
+        opacity: 0,
+        '&:hover':{
+            opacity: 1
+        }
     }
 }))
 
@@ -62,7 +70,7 @@ function RenderItemWhole(props) {
         <Fade bottom>
             <ListItem className={useStyle.listItem}>
                 <div className={useStyle.root}>
-                    {showDialog && <ImageModal path={process.env.PUBLIC_URL + props.project.tileTile.gif} handler={handleCardClick} />}
+                    {showDialog && <ImageModal path={props.project.tileTile.media} handler={handleCardClick} />}
                     <Grid container spacing={10} direction="row">
                         <Grid item md={4} sm={12} xs={12}>
                             <h4>{props.project.tileTile.title}</h4>
@@ -86,19 +94,7 @@ function RenderItemWhole(props) {
                         <Grid item md={8} sm={12} xs={12}>
                             <Card className={useStyle.paper}>
                                  <CardActionArea onClick={handleCardClick}>
-                                   <CardMedia
-                                        className={useStyle.test}
-                                        component="video"
-                                        loop
-                                        autoPlay 
-                                        muted
-                                        alt="card image failed to load"
-                                        src={process.env.PUBLIC_URL + props.project.tileTile.gif}
-                                        title={`${props.project.tileTile.title} (Click to view)`}
-                                    />
-                                {/* <video loop autoPlay={true} controls muted>
-                                     <source  src={process.env.PUBLIC_URL + props.project.tileTile.gif} type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                                </video> */}
+                                     <Thumbnail source={process.env.PUBLIC_URL + props.project.tileTile.thumbnail} />
                                 </CardActionArea>
                             </Card>
                         </Grid>

@@ -8,7 +8,7 @@
     "backend":{
         "languages": ["Javascript *", "C#"],
         "environments": ["NodeJS w/ Express *",".NET Core 3.0"],
-        "databases": ["MongoDB *","PostGreSQL", "Oracle SQL"],
+        "databases": ["MongoDB *","PostgreSQL", "Oracle SQL", "MSSQL"],
         "tools": ["Powershell","Git","Azure & Azure Devops","GCP functions","Azure automation runbooks & functions","Heroku"]
     }
 }
