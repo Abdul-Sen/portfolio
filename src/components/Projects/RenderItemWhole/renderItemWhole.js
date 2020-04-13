@@ -23,9 +23,10 @@ const cssStyles = makeStyles(theme => ({
         padding: "10px",
     },
     paper: {
+        margin: "auto",
         borderRadius: "2em",
-        maxWidth: 600,
-        maxHeight: 800,
+        maxWidth: 768,
+        maxHeight: 1024,
         textAlign: "center",
         backgroundColor: "#FFFFFF",
         boxShadow: "5px 5px 10px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2)",
