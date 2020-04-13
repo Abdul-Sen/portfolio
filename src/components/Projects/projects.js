@@ -12,7 +12,6 @@ function Projects(props) {
   return (
     <Fragment>
       <Container id="projectsContainer" maxWidth={false} >
-        <Fade left>
           <Grid justify="space-around" container direction="row" alignItems="flex-start" >
             <Grid item md={10} sm={12}>
               <Typography variant="h3" gutterBottom>
@@ -26,7 +25,6 @@ function Projects(props) {
               <HooppStatic></HooppStatic>
             </Grid>
           </Grid>
-        </Fade>
         <Grid container direction="column" alignItems="center">
           <Grid item md={12}>
             <Typography variant="h3" gutterBottom>
@@ -34,10 +32,12 @@ function Projects(props) {
             </Typography>
           </Grid>
           <Grid item md={10}>
+            <Fade Bottom >
             {projectsArray.map((currentValue, currentIndex) => {
               // Return the element. Also pass key
               return (projectsArray.length === currentIndex ? <RenderItemWhole key={currentIndex} project={currentValue} renderHR={false} /> : <RenderItemWhole key={currentIndex} project={currentValue} renderHR={true} />)
             })}
+            </Fade>
           </Grid>
         </Grid>
       </Container>

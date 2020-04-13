@@ -78,6 +78,11 @@ const Info = (props) => {
                 </Button>
                     </Box>
                 </Grid>
+                <Grid item md={12} sm={12} xs={12}>
+                    <Typography variant={"caption"} >
+                    Illustration by <Box component={"a"} href={"https://ls.graphics/"} target="_blank"  > Ls Graphics </Box> ❤️
+                    </Typography>
+                </Grid>
             </Grid>
         </Fade>
     )

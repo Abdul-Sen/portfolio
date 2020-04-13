@@ -14,7 +14,6 @@ function AppAlt(props) {
             <Home />
             <SkillsContainer />
             <Projects />
-
             <ContactContainer />
             <Footer />
         </Container>

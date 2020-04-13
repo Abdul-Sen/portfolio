@@ -67,7 +67,6 @@ function RenderItemWhole(props) {
     }
 
     return (<Fragment>
-        <Fade bottom>
             <ListItem className={useStyle.listItem}>
                 <div className={useStyle.root}>
                     {showDialog && <ImageModal path={props.project.tileTile.media} handler={handleCardClick} />}
@@ -113,7 +112,6 @@ function RenderItemWhole(props) {
                     </Grid>
                 </div>
             </ListItem>
-        </Fade>
         {props.renderHR && <hr></hr>}
     </Fragment>);
 }
