@@ -2,7 +2,7 @@
     "project": [
         {
             "tileTile":{
-                "thumbnail": "/images/devovaro.png",
+                "thumbnail": "/images/devovaro.PNG",
                 "projectLink": "https://github.com/Abdul-Sen/Fullstack-redux-store-app",
                 "demoLink": "https://sleepy-sierra-88885.herokuapp.com/",
                 "media": "https://youtu.be/pDSheItqEys",
@@ -13,7 +13,7 @@
         },
         {
             "tileTile":{
-                "thumbnail": "/images/portfolio.png",
+                "thumbnail": "/images/portfolio.PNG",
                 "projectLink": "https://abdul-sen.github.io/portfolio/",
                 "demoLink": "https://abdul-sen.github.io/portfolio/",
                 "media": "https://youtu.be/MtE6bhzSR5E",
