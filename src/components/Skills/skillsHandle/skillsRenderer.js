@@ -3,7 +3,6 @@ import { Typography } from '@material-ui/core';
 
 
 function SkillsRenderer({ title, items,addHr }) {
-    console.log(items);
     return (
         <Fragment>
             <Typography  component={"span"} variant={"h6"}>{title}</Typography>

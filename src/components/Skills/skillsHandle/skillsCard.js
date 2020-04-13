@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {Card, Paper, Typography,CardContent} from '@material-ui/core';
+import {Card, Paper, Typography,CardContent, Box} from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles(theme=>({
@@ -19,7 +19,6 @@ const useStyles = makeStyles(theme=>({
     }
 }));
 
-const DisList = <ul>hello world?</ul>;
 function SkillsCard({children, title}){
     const cssClass = useStyles();
     return(
@@ -28,10 +27,15 @@ function SkillsCard({children, title}){
             <Card className={cssClass.root}>
                 <CardContent>
                     <Typography display="block"  component={'span'} className={cssClass.title} variant={"h4"}>
+                        <Box fontWeight={"300"}>
                         {title}
+                        </Box>
                     </Typography>
                     <Typography component={'span'} className={cssClass.body}>
+                    <Box fontWeight={"300"}>
+
                         {children}
+                    </Box>
                     </Typography>
                 </CardContent>
             </Card>

@@ -18,8 +18,11 @@ function Projects(props) {
                 <Box paddingTop="50px" fontWeight="fontWeightLight" >Work Experience</Box>
               </Typography>
             </Grid>
-            <Grid item md={10} sm={12}>
-              <h3>Systems Developer (co-op) - Healthcare of Ontario Pension Plan</h3>
+            <Grid item md={6} sm={12} xs={12}>
+              <Typography variant={"h6"} ><Box marginTop={"20px"} marginBottom={"20px"} fontWeight={"bolder"}>Systems Developer Coop - Healthcare of Ontario Pension Plan</Box></Typography>
+            </Grid>
+            <Grid item md={2} sm={12} xs={12}>
+              <Typography variant={"body2"} ><Box marginTop={"20px"} textAlign={"end"}>(May - Dec 2019)</Box></Typography>
             </Grid>
             <Grid item md={10} sm={12}>
               <HooppStatic></HooppStatic>

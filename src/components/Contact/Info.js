@@ -21,7 +21,7 @@ const Info = (props) => {
                 </Grid>
                 <Grid item md={11}>
                     <Typography component={'span'} variant="body1" gutterBottom>
-                        <Box>
+                        <Box fontWeight={"300"}>
                             My name is Abdul Rehman, and I am a final semester computer programming student at Seneca College. I am actively searching for a place to work where I can learn and grow as a developer.
               <br /><br />
                         I bring with myself an energetic personality and a love of learning and building modern web applications.
@@ -47,7 +47,7 @@ const Info = (props) => {
                 </Grid>
                 <Grid item md={12} sm={12}>
                     <Typography component={'span'} variant="body2" style={{ display: "flex", alignItems: "center" }}>
-                        <MailOutlineIcon /> &ensp; abdul-rehman@myseneca.ca
+                        <MailOutlineIcon /> &ensp; abdul-rehman@alcamine.com
           </Typography>
                 </Grid>
                 <Grid item md={12} sm={12}>

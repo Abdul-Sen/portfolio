@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from 'react';
-import { ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGroup, Modal } from '@material-ui/core';
+import {Box, ListItem, Grid, Card, CardActionArea, CardMedia, Button, Fab, ButtonGroup, Modal, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
@@ -73,7 +73,8 @@ function RenderItemWhole(props) {
                     <Grid container spacing={10} direction="row">
                         <Grid item md={4} sm={12} xs={12}>
                             <h4>{props.project.tileTile.title}</h4>
-                            <p>{props.project.tileTile.description}</p>
+                            {/* <p>{props.project.tileTile.description}</p> */}
+                            <Typography variant={"body1"}><Box >{props.project.tileTile.description}</Box></Typography>
                             <Grid container >
                                 <Grid item className={useStyle.content} md={12}>
                                     <Grid container direction="row" spacing={3}>
