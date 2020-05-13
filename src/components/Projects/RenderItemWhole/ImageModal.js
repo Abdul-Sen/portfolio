@@ -32,7 +32,7 @@ function ImageModal(props) {
             open={true}
             onClose={props.handler}
         >
-        <ReactPlayer height={"90%"} width={"70%"} className={cssStyle.img} playing={true} muted loop controls={false}  url={props.path} />
+        <ReactPlayer height={"90%"} width={"70%"} className={cssStyle.img} playing={true} muted loop controls={true}  url={props.path} />
         </Modal>
     )
 }

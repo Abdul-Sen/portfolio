@@ -22,9 +22,10 @@ const Info = (props) => {
                 <Grid item md={11}>
                     <Typography component={'span'} variant="body1" gutterBottom>
                         <Box fontWeight={"300"}>
-                            My name is Abdul Rehman, and I am a final semester computer programming student at Seneca College. I am actively searching for a place to work where I can learn and grow as a developer.
+                            My name is Abdul Rehman, and I am a recent computer programming graduate from Seneca College with an interest in web technologies.I bring an energetic and communicative personality to the team and I love to learn, build and deliver.
               <br /><br />
-                        I bring with myself an energetic personality and a love of learning and building modern web applications.
+                        Actively seeking a position where I can make meaningful contribution and grow as a developer. 
+                        
             </Box>
                     </Typography>
                 </Grid>
@@ -47,7 +48,7 @@ const Info = (props) => {
                 </Grid>
                 <Grid item md={12} sm={12}>
                     <Typography component={'span'} variant="body2" style={{ display: "flex", alignItems: "center" }}>
-                        <MailOutlineIcon /> &ensp; abdul-rehman@alcamine.com
+                        <MailOutlineIcon /> &ensp; abdul.rm.jahangir@gmail.com
           </Typography>
                 </Grid>
                 <Grid item md={12} sm={12}>
