@@ -2,6 +2,17 @@
     "project": [
         {
             "tileTile":{
+                "thumbnail": "/images/bmi.jpg",
+                "projectLink":"https://github.com/Abdul-Sen/Neomorphic-BMI-Calculator",
+                "demoLink":"https://abdul-sen.github.io/Neomorphic-BMI-Calculator/",
+                "media":"https://youtu.be/OdLw8RnALxI",
+                "title":"Neomorphic BMI Calculator",
+                "description": "used styled-components and react-redux to build a minimal yet accessible BMI calculator",
+                "tags": ["styled-components","UX/UI","JSS","React","redux"]
+            }
+        },
+        {
+            "tileTile":{
                 "thumbnail": "/images/devovaro.PNG",
                 "projectLink": "https://github.com/Abdul-Sen/Fullstack-redux-store-app",
                 "demoLink": "https://sleepy-sierra-88885.herokuapp.com/",
