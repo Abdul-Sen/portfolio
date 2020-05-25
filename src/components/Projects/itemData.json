@@ -4,7 +4,7 @@
             "tileTile":{
                 "thumbnail": "/images/bmi.jpg",
                 "projectLink":"https://github.com/Abdul-Sen/Neomorphic-BMI-Calculator",
-                "demoLink":"https://abdul-sen.github.io/Neomorphic-BMI-Calculator/",
+                "demoLink":"https://abdul-sen.github.io/Numorphic-BMI-Calculator/",
                 "media":"https://youtu.be/OdLw8RnALxI",
                 "title":"Neomorphic BMI Calculator",
                 "description": "used styled-components and react-redux to build a minimal yet accessible BMI calculator",
