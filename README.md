@@ -1,6 +1,5 @@
 ## Portfolio site
 
-Built to showcase some of my projects and allow easy communication
+Built to showcase some of my projects
 
-Tech debts:
-- Add a download resume option
+## [Portfolio Link](https://abdul-sen.github.io/portfolio/)
