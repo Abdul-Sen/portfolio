@@ -14,12 +14,6 @@ function SkillsContainer(props) {
                 <Grid item md={12} sm={12} xs={12}>
                     <SkillsHandle />
                 </Grid>
-                <Grid item md={10} sm={12} xl={10}>
-                    <Typography variant="subtitle2" gutterBottom={false}>
-                        <Box display="inline" color="red">*&nbsp;</Box>
-                        <Box display="inline"> - Preferred tool</Box>
-                    </Typography>
-                </Grid>
             </Grid>
         </Container>
     )

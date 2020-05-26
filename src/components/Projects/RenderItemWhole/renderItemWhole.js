@@ -39,6 +39,7 @@ const cssStyles = makeStyles(theme => ({
         color: "#39739d",
         backgroundColor: "#e1ecf4",
         borderColor: "#e1ecf4",
+        textTransform: "none"
     },
     buttonGroup: {
         flexWrap: "wrap"

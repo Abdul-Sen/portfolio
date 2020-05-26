@@ -57,7 +57,7 @@ export default function NavBarSelf(props) {
                 <Grid item xs={12} sm={3} md={2}  style={{textAlign:"center"}}>
                 <LinkTwo  smooth={true} to={ROUTES.PROJECTS} style={{textDecoration: "none"}} >
                     <Button fullWidth>
-                            Work
+                            Work & Projects
                     </Button>
                     </LinkTwo>
                 </Grid>

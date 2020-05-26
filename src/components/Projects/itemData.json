@@ -2,35 +2,24 @@
     "project": [
         {
             "tileTile":{
-                "thumbnail": "/images/bmi.jpg",
-                "projectLink":"https://github.com/Abdul-Sen/Neomorphic-BMI-Calculator",
-                "demoLink":"https://abdul-sen.github.io/Numorphic-BMI-Calculator/",
-                "media":"https://youtu.be/OdLw8RnALxI",
-                "title":"Neumorphic BMI Calculator",
-                "description": "used styled-components and react-redux to build a minimal yet accessible BMI calculator",
-                "tags": ["styled-components","UX/UI","JSS","React","redux"]
-            }
-        },
-        {
-            "tileTile":{
                 "thumbnail": "/images/devovaro.PNG",
                 "projectLink": "https://github.com/Abdul-Sen/Fullstack-redux-store-app",
                 "demoLink": "https://sleepy-sierra-88885.herokuapp.com/",
                 "media": "https://youtu.be/pDSheItqEys",
                 "title": "Dev Social Site",
                 "description": "Fullstack web app showcasing both frontend design & state management skills as well as building of backend server and database. Implemented API support for infinite scroll and utilization of that feature with React.",
-                "tags": ["React/redux","Material UI","MongoDB","Node/Express","Heroku"]
+                "tags": ["Fullstack","React","Redux","Material UI","MongoDB","NodeJS","ExpressJS","Heroku"]
             }
         },
         {
             "tileTile":{
-                "thumbnail": "/images/portfolio.PNG",
-                "projectLink": "https://abdul-sen.github.io/portfolio/",
-                "demoLink": "https://abdul-sen.github.io/portfolio/",
-                "media": "https://youtu.be/MtE6bhzSR5E",
-                "title": "This site!",
-                "description": "Built with React and hosted on Github Pages, this site uses GCP functions to securely sends any messages from contact form",
-                "tags": ["react","material UI","Google Cloud Functions","Github Pages"]
+                "thumbnail": "/images/bmi.jpg",
+                "projectLink":"https://github.com/Abdul-Sen/Neomorphic-BMI-Calculator",
+                "demoLink":"https://abdul-sen.github.io/Numorphic-BMI-Calculator/",
+                "media":"https://www.youtube.com/watch?v=rQ8Rn5wnjVg&feature=youtu.be",
+                "title":"Neumorphic BMI Calculator",
+                "description": "used styled-components and react-redux to build a minimal yet accessible frontend BMI calculator",
+                "tags": ["Frontend","styled-components","UX/UI","JSS","React","Redux"]
             }
         },
         {
@@ -41,7 +30,7 @@
                 "demoLink": "https://vast-ravine-81065.herokuapp.com/",
                 "media": "https://youtu.be/kKf0EUvZC7g",
                 "description": "Hungry and don't know what to cook? Fear not! This app will help you find random recipes. This app uses server-side rendering for its views. Users can perform CRUD operations on recipes they add to their profile. Use `DemoUser` for username and password to login",
-                "tags": ["nodeJs","bootstrap 4","handlebars","mongoDB", "PostgreSQL"]
+                "tags": ["Fullstack","jQuery","PostgreSQL","NodeJs","MongoDB","Bootstrap 4","HandlebarsJS"]
             }
         }
     ]
