@@ -27,7 +27,7 @@ function SkillsHandle(props) {
                         <SkillsCard title={"Backend"}>
                         {
                                 Object.entries(skillsData.backend).map((value, index) => {
-                                    let keyCount = (Object.keys(skillsData.frontend).length);
+                                    let keyCount = (Object.keys(skillsData.backend).length);
                                     return <SkillsRenderer key={index} title={value[0]} items={value[1]} addHr={keyCount == (index+1)? false:true}/>
                                 })
                         }

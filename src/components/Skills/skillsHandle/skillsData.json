@@ -1,6 +1,5 @@
 {
     "frontend":{
-        "Core": ["Modern ES6","HTML5"],
         "Web frameworks": ["React","Flutter","Angular 7","jQuery"],
         "Styling": ["Bootstrap 4", "Material UI","CSS3","Styled Components"],
         "State management solutions": ["Redux", "RxJS"]
