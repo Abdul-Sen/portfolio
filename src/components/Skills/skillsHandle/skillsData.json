@@ -1,6 +1,6 @@
 {
     "frontend":{
-        "Web frameworks": ["React","Flutter","Angular 7","jQuery"],
+        "Web frameworks": ["React","Flutter","jQuery"],
         "Styling": ["Bootstrap 4", "Material UI","CSS3","Styled Components"],
         "State management solutions": ["Redux", "RxJS"]
     },
