@@ -114,12 +114,6 @@ function ContactCard(props)
                   <FormHelperText id="message-helper-text">Required.</FormHelperText>
 
                 </Grid>
-                <Grid item xs={12}>
-                  <FormControlLabel
-                    control={<Checkbox color="primary" name="copyEmailStatus" checked={emailInfo.copyEmailStatus} disabled onChange={handleChange} value="yes" />}
-                    label="Send me a copy of the email (Temp disabled)"
-                  />
-                </Grid>
                 <Grid item className={useStyle.fab} md={4}>
                   <Fab variant="extended" size="large" color="primary" type="submit" value="submit">
                     send message
