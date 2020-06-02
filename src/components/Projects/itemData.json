@@ -16,7 +16,7 @@
                 "thumbnail": "/images/bmi.jpg",
                 "projectLink":"https://github.com/Abdul-Sen/Neomorphic-BMI-Calculator",
                 "demoLink":"https://abdul-sen.github.io/Numorphic-BMI-Calculator/",
-                "media":"https://www.youtube.com/watch?v=rQ8Rn5wnjVg&feature=youtu.be",
+                "media":"https://youtu.be/b8em8ywP3No",
                 "title":"Neumorphic BMI Calculator",
                 "description": "used styled-components and react-redux to build a minimal yet accessible frontend BMI calculator",
                 "tags": ["Frontend","styled-components","UX/UI","JSS","React","Redux"]

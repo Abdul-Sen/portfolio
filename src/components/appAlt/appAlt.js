@@ -9,7 +9,7 @@ import SkillsContainer from '../Skills/skillsContainer';
 
 function AppAlt(props) {
     return (
-        <Container maxWidth={false} disableGutters={true}>
+        <Container style={{zoom:"80%"}} maxWidth={false} disableGutters={true}>
             <Nav />
             <Home />
             <SkillsContainer />

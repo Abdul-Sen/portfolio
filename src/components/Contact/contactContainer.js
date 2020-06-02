@@ -83,7 +83,9 @@ function ContactContainer(props) {
   return (
     <Fragment>
       <Container id="contactContainer" maxWidth={false} className={useStyle.container}>
-        <Grid container justify="center" spacing={5} >
+      <Grid container direction="column" alignItems="center">
+      <Grid item md={10}>
+      <Grid container justify="center" spacing={5} >
           <Grid item md={6}>
             <Info />
           </Grid>
@@ -91,6 +93,8 @@ function ContactContainer(props) {
             <ContactCard />
           </Grid>
         </Grid>
+      </Grid>
+      </Grid>
       </Container>
     </Fragment>
   )
