@@ -2,6 +2,17 @@
     "project": [
         {
             "tileTile":{
+                "thumbnail": "/images/edwatch.jpg",
+                "projectLink": "https://github.com/Abdul-Sen/EdWatch",
+                "demoLink": "https://edwatch.me/",
+                "media": "https://youtu.be/GqMYCcu46is",
+                "title": "Edwatch.me (New! 🔥🔥🔥)",
+                "description": "A realtime webapp that empowers users to create sessions and watch videos together synchronously.",
+                "tags": ["styled-components", "React", "Redux", "Redux-thunk", "Nginx", "Docker", "JavaScript", "Figma", "C#", ".NET Core", "signalR", "Linux", "bash"]
+            }
+        },
+        {
+            "tileTile":{
                 "thumbnail": "/images/devovaro.PNG",
                 "projectLink": "https://github.com/Abdul-Sen/Fullstack-redux-store-app",
                 "demoLink": "https://sleepy-sierra-88885.herokuapp.com/",
@@ -29,7 +40,7 @@
                 "projectLink": "https://github.com/Abdul-Sen/Recipe-application",
                 "demoLink": "https://vast-ravine-81065.herokuapp.com/",
                 "media": "https://youtu.be/kKf0EUvZC7g",
-                "description": "Hungry and don't know what to cook? Fear not! This app will help you find random recipes. This app uses server-side rendering for its views. Users can perform CRUD operations on recipes they add to their profile. Use `DemoUser` for username and password to login",
+                "description": "Hungry and don't know what to cook? Fear not! This app will help you find random recipes. This app uses server-side rendering for its views. Users can perform CRUD operations on recipes they add to their profile. Use `DemoUser` for username and password to login.",
                 "tags": ["Fullstack","jQuery","PostgreSQL","NodeJs","MongoDB","Bootstrap 4","HandlebarsJS"]
             }
         }
