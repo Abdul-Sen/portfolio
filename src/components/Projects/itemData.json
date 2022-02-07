@@ -2,11 +2,22 @@
     "project": [
         {
             "tileTile":{
+                "thumbnail": "/images/analytics.jpg",
+                "projectLink": "https://github.com/Abdul-Sen/Canada-search-trends-analytics",
+                "demoLink": "https://abdul-sen.github.io/Canada-search-trends-analytics/",
+                "media": "https://youtu.be/R4f72bI92I4",
+                "title": "Canada Search Trend Analytics",
+                "description": "A react app meant to visualize popular search trends in Canada during COVID.",
+                "tags": ["typescript", "React", "Redux", "Figma", "webpack", "geojson", "DSA", "UX/UI"]
+            }
+        },
+        {
+            "tileTile":{
                 "thumbnail": "/images/edwatch.jpg",
                 "projectLink": "https://github.com/Abdul-Sen/EdWatch",
-                "demoLink": "https://edwatch.me/",
+                "demoLink": "",
                 "media": "https://youtu.be/GqMYCcu46is",
-                "title": "Edwatch.me (New! 🔥🔥🔥)",
+                "title": "Edwatch.me",
                 "description": "A realtime webapp that empowers users to create sessions and watch videos together synchronously.",
                 "tags": ["styled-components", "React", "Redux", "Redux-thunk", "Nginx", "Docker", "JavaScript", "Figma", "C#", ".NET Core", "signalR", "Linux", "bash"]
             }
