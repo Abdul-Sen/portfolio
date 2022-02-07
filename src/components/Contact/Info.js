@@ -22,10 +22,8 @@ const Info = (props) => {
                 <Grid item md={11}>
                     <Typography component={'span'} variant="body1" gutterBottom>
                         <Box fontWeight={"300"}>
-                            My name is Abdul Rehman, and I am a recent computer programming graduate from Seneca College with an interest in web technologies.I bring an energetic and communicative personality to the team and I love to learn, build and deliver.
-              <br /><br />
-                        Actively seeking a position where I can make meaningful contribution and grow as a developer. 
-                        
+                            My name is Abdul Rehman, I am a software developer based in Toronto, Canada. I have a great interest in web technologies. Most of my professional experience revolves around Microsoft technologies but in my personal time I also like to challenge myself and venture outside. I bring an energetic and communicative personality to the team and I love to learn, build and deliver 🙂.
+                            <br /><br />
             </Box>
                     </Typography>
                 </Grid>
