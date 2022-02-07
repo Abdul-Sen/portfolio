@@ -36,16 +36,6 @@ function Projects(props) {
               </Typography>
             </Grid>
             <Grid item md={6} sm={12} xs={12}>
-              <Typography variant={"h6"} ><Box marginTop={"20px"} marginBottom={"20px"} fontWeight={"bolder"}>Systems Developer Coop - Healthcare of Ontario Pension Plan</Box></Typography>
-            </Grid>
-            <Grid item md={2} sm={12} xs={12}>
-              <Typography variant={"body2"} ><Box marginTop={"20px"} textAlign={"end"}>(May - Dec 2019)</Box></Typography>
-            </Grid>
-            <Grid item md={10} sm={12}>
-            <WorkStatic title={"Worked in a DevOps team as a systems developer, automating backend systems using C# and PowerShell. Emphasis on deliverables to stakeholders through Scrum."} techSkills= {["Azure", "Active Directory", "PowerShell", ".NET Core", "CI / CD", "C#"]} ></WorkStatic>
-            </Grid>
-            
-            <Grid item md={6} sm={12} xs={12}>
               <Typography variant={"h6"} ><Box marginTop={"20px"} marginBottom={"20px"} fontWeight={"bolder"}>Full Stack .NET Developer - ForaHealthyMe</Box></Typography>
             </Grid>
             <Grid item md={2} sm={12} xs={12}>
@@ -53,6 +43,15 @@ function Projects(props) {
             </Grid>
             <Grid item md={10} sm={12}>
               <WorkStatic title={"Working in a team delivering new features to an existing healthcare platform."} techSkills= {["Azure", "C#", ".NET Framework", "SQL", "JavaScript", "HTML", "MVC", "REST API", "OAuth 2.0", "Postman"]} ></WorkStatic>
+            </Grid>
+            <Grid item md={6} sm={12} xs={12}>
+              <Typography variant={"h6"} ><Box marginTop={"20px"} marginBottom={"20px"} fontWeight={"bolder"}>Systems Developer Coop - Healthcare of Ontario Pension Plan</Box></Typography>
+            </Grid>
+            <Grid item md={2} sm={12} xs={12}>
+              <Typography variant={"body2"} ><Box marginTop={"20px"} textAlign={"end"}>(May - Dec 2019)</Box></Typography>
+            </Grid>
+            <Grid item md={10} sm={12}>
+            <WorkStatic title={"Worked in a DevOps team as a systems developer, automating backend systems using C# and PowerShell. Emphasis on deliverables to stakeholders through Scrum."} techSkills= {["Azure", "Active Directory", "PowerShell", ".NET Core", "CI / CD", "C#"]} ></WorkStatic>
             </Grid>
           </Grid>
       </Container>
